@@ -1,0 +1,953 @@
+2022-03-26 21:27:36.423 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 6.1.6.Final
+2022-03-26 21:27:37.710 INFO  c.a.n.client.config.impl.LocalConfigInfoProcessor :212  [32m                  [0;39m LOCAL_SNAPSHOT_PATH:C:\Users\partick_peng\nacos\config
+2022-03-26 21:27:37.796 INFO  com.alibaba.nacos.client.config.utils.JvmUtil     :49   [32m                  [0;39m isMultiInstance:false
+2022-03-26 21:27:37.878 WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder :87   [32m                  [0;39m Ignore the empty nacos configuration and get it based on dataId[wiki-user] & group[DEFAULT_GROUP]
+2022-03-26 21:27:37.965 WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder :87   [32m                  [0;39m Ignore the empty nacos configuration and get it based on dataId[wiki-user.yml] & group[DEFAULT_GROUP]
+2022-03-26 21:27:38.049 INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration    :112  [32m                  [0;39m Located property source: [BootstrapPropertySource {name='bootstrapProperties-wiki-user-dev.yml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-wiki-user.yml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-wiki-user,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-common.yml,DEFAULT_GROUP'}]
+2022-03-26 21:27:38.052 INFO  com.partick.user.WikiUserApplication              :655  [32m                  [0;39m The following profiles are active: dev
+2022-03-26 21:27:38.499 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :249  [32m                  [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-03-26 21:27:38.501 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :127  [32m                  [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-03-26 21:27:38.524 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :187  [32m                  [0;39m Finished Spring Data repository scanning in 13ms. Found 0 Redis repository interfaces.
+2022-03-26 21:27:38.663 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m                  [0;39m BeanFactory id=49595db8-e6c2-3a49-99ee-d6f6cf8c84b8
+2022-03-26 21:27:38.809 ERROR org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m An incompatible version [1.1.33] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2022-03-26 21:27:39.052 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 9404 (http)
+2022-03-26 21:27:39.059 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-9404"]
+2022-03-26 21:27:39.060 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-03-26 21:27:39.060 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-03-26 21:27:39.187 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-03-26 21:27:39.188 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :285  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1122 ms
+2022-03-26 21:27:39.616 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m                  [0;39m No URLs will be polled as dynamic configuration sources.
+2022-03-26 21:27:39.616 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m                  [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-03-26 21:27:39.619 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m                  [0;39m No URLs will be polled as dynamic configuration sources.
+2022-03-26 21:27:39.620 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m                  [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-03-26 21:27:39.755 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2022-03-26 21:27:40.608 INFO  com.alibaba.nacos.client.naming                   :64   [32m                  [0;39m initializer namespace from System Property :null
+2022-03-26 21:27:40.608 INFO  com.alibaba.nacos.client.naming                   :73   [32m                  [0;39m initializer namespace from System Environment :null
+2022-03-26 21:27:40.609 INFO  com.alibaba.nacos.client.naming                   :83   [32m                  [0;39m initializer namespace from System Property :null
+2022-03-26 21:27:41.978 INFO  com.alibaba.nacos.client.naming                   :190  [32m                  [0;39m new ips(1) service: DEFAULT_GROUP@@wiki-user@@DEFAULT -> [{"instanceId":"192.168.43.209#9404#DEFAULT#DEFAULT_GROUP@@wiki-user","ip":"192.168.43.209","port":9404,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@wiki-user","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2022-03-26 21:27:41.982 INFO  com.alibaba.nacos.client.naming                   :227  [32m                  [0;39m current ips:(1) service: DEFAULT_GROUP@@wiki-user@@DEFAULT -> [{"instanceId":"192.168.43.209#9404#DEFAULT#DEFAULT_GROUP@@wiki-user","ip":"192.168.43.209","port":9404,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@wiki-user","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2022-03-26 21:27:41.983 INFO  com.alibaba.nacos.client.naming                   :83   [32m                  [0;39m [LISTENER] adding DEFAULT_GROUP@@wiki-user with DEFAULT to listener map
+2022-03-26 21:27:41.983 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-9404"]
+2022-03-26 21:27:42.002 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 9404 (http) with context path ''
+2022-03-26 21:27:42.005 INFO  com.alibaba.nacos.client.naming                   :81   [32m                  [0;39m [BEAT] adding beat: BeatInfo{port=9404, ip='192.168.43.209', weight=1.0, serviceName='DEFAULT_GROUP@@wiki-user', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+2022-03-26 21:27:42.005 INFO  com.alibaba.nacos.client.naming                   :223  [32m                  [0;39m [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@wiki-user with instance: Instance{instanceId='null', ip='192.168.43.209', port=9404, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+2022-03-26 21:27:42.087 INFO  c.a.cloud.nacos.registry.NacosServiceRegistry     :71   [32m                  [0;39m nacos registry, DEFAULT_GROUP wiki-user 192.168.43.209:9404 register finished
+2022-03-26 21:27:42.774 INFO  com.partick.user.WikiUserApplication              :61   [32m                  [0;39m Started WikiUserApplication in 7.593 seconds (JVM running for 8.976)
+2022-03-26 21:27:42.777 INFO  com.alibaba.nacos.client.config.impl.ClientWorker :262  [32m                  [0;39m [fixed-101.34.34.129_8848] [subscribe] wiki-user+DEFAULT_GROUP
+2022-03-26 21:27:42.778 INFO  com.alibaba.nacos.client.config.impl.CacheData    :93   [32m                  [0;39m [fixed-101.34.34.129_8848] [add-listener] ok, tenant=, dataId=wiki-user, group=DEFAULT_GROUP, cnt=1
+2022-03-26 21:27:42.778 INFO  com.alibaba.nacos.client.config.impl.ClientWorker :262  [32m                  [0;39m [fixed-101.34.34.129_8848] [subscribe] wiki-user-dev.yml+DEFAULT_GROUP
+2022-03-26 21:27:42.779 INFO  com.alibaba.nacos.client.config.impl.CacheData    :93   [32m                  [0;39m [fixed-101.34.34.129_8848] [add-listener] ok, tenant=, dataId=wiki-user-dev.yml, group=DEFAULT_GROUP, cnt=1
+2022-03-26 21:27:42.779 INFO  com.alibaba.nacos.client.config.impl.ClientWorker :262  [32m                  [0;39m [fixed-101.34.34.129_8848] [subscribe] wiki-user.yml+DEFAULT_GROUP
+2022-03-26 21:27:42.779 INFO  com.alibaba.nacos.client.config.impl.CacheData    :93   [32m                  [0;39m [fixed-101.34.34.129_8848] [add-listener] ok, tenant=, dataId=wiki-user.yml, group=DEFAULT_GROUP, cnt=1
+2022-03-26 21:27:42.779 INFO  com.alibaba.nacos.client.config.impl.ClientWorker :262  [32m                  [0;39m [fixed-101.34.34.129_8848] [subscribe] common.yml+DEFAULT_GROUP
+2022-03-26 21:27:42.780 INFO  com.alibaba.nacos.client.config.impl.CacheData    :93   [32m                  [0;39m [fixed-101.34.34.129_8848] [add-listener] ok, tenant=, dataId=common.yml, group=DEFAULT_GROUP, cnt=1
+2022-03-26 21:28:09.231 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-26 21:28:09.232 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2022-03-26 21:28:09.238 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 6 ms
+2022-03-26 21:28:09.248 INFO  com.partick.common.interceptor.LoginInterceptor   :29   [32m                  [0;39m ------------- LoginInterceptor 开始 -------------
+2022-03-26 21:28:09.248 INFO  com.partick.common.interceptor.LoginInterceptor   :40   [32m                  [0;39m 接口登录拦截：，path：http://192.168.43.209:9404/user/hello
+2022-03-26 21:28:09.249 INFO  com.partick.common.interceptor.LoginInterceptor   :44   [32m                  [0;39m 登录校验开始，token：null
+2022-03-26 21:28:09.249 INFO  com.partick.common.interceptor.LoginInterceptor   :46   [32m                  [0;39m token为空，请求被拦截
+2022-03-26 21:28:17.493 INFO  com.partick.common.interceptor.LoginInterceptor   :29   [32m                  [0;39m ------------- LoginInterceptor 开始 -------------
+2022-03-26 21:28:17.493 INFO  com.partick.common.interceptor.LoginInterceptor   :40   [32m                  [0;39m 接口登录拦截：，path：http://localhost:9404/user/hello
+2022-03-26 21:28:17.494 INFO  com.partick.common.interceptor.LoginInterceptor   :44   [32m                  [0;39m 登录校验开始，token：null
+2022-03-26 21:28:17.494 INFO  com.partick.common.interceptor.LoginInterceptor   :46   [32m                  [0;39m token为空，请求被拦截
+2022-03-26 21:28:37.826 INFO  com.partick.common.interceptor.LoginInterceptor   :29   [32m                  [0;39m ------------- LoginInterceptor 开始 -------------
+2022-03-26 21:28:37.826 INFO  com.partick.common.interceptor.LoginInterceptor   :40   [32m                  [0;39m 接口登录拦截：，path：http://192.168.43.209:9404/user/hello
+2022-03-26 21:28:37.826 INFO  com.partick.common.interceptor.LoginInterceptor   :44   [32m                  [0;39m 登录校验开始，token：null
+2022-03-26 21:28:37.826 INFO  com.partick.common.interceptor.LoginInterceptor   :46   [32m                  [0;39m token为空，请求被拦截
+2022-03-26 21:28:41.670 INFO  com.partick.common.interceptor.LoginInterceptor   :29   [32m                  [0;39m ------------- LoginInterceptor 开始 -------------
+2022-03-26 21:28:41.670 INFO  com.partick.common.interceptor.LoginInterceptor   :40   [32m                  [0;39m 接口登录拦截：，path：http://192.168.43.209:9404/user/hello
+2022-03-26 21:28:41.671 INFO  com.partick.common.interceptor.LoginInterceptor   :44   [32m                  [0;39m 登录校验开始，token：null
+2022-03-26 21:28:41.671 INFO  com.partick.common.interceptor.LoginInterceptor   :46   [32m                  [0;39m token为空，请求被拦截
+2022-03-26 21:29:07.617 INFO  com.partick.common.aspect.LogAspect               :52   [32m162915775114514432[0;39m ---------LogAspect 开始-------------
+2022-03-26 21:29:07.618 INFO  com.partick.common.aspect.LogAspect               :53   [32m162915775114514432[0;39m 请求地址：http://192.168.43.209:9404/user/loginPOST
+2022-03-26 21:29:07.618 INFO  com.partick.common.aspect.LogAspect               :54   [32m162915775114514432[0;39m 类名方法：com.partick.user.controller.UserControllerlogin
+2022-03-26 21:29:07.618 INFO  com.partick.common.aspect.LogAspect               :55   [32m162915775114514432[0;39m 远程地址：192.168.43.209
+2022-03-26 21:29:07.676 INFO  com.partick.common.aspect.LogAspect               :75   [32m162915775114514432[0;39m 请求参数：[[{"loginName":"test"}]]
+2022-03-26 21:29:07.692 ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet]   :175  [32m162915775114514432[0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.partick.database.mapper.UserMapper.selectByExample] with root cause
+org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.partick.database.mapper.UserMapper.selectByExample
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:235)
+	at org.apache.ibatis.binding.MapperMethod.<init>(MapperMethod.java:53)
+	at org.apache.ibatis.binding.MapperProxy.lambda$cachedInvoker$0(MapperProxy.java:115)
+	at org.apache.ibatis.binding.MapperProxy$$Lambda$738/1856174960.apply(Unknown Source)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(Unknown Source)
+	at org.apache.ibatis.binding.MapperProxy.cachedInvoker(MapperProxy.java:102)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
+	at com.sun.proxy.$Proxy91.selectByExample(Unknown Source)
+	at com.partick.user.service.impl.UserServiceImpl.selectByLoginName(UserServiceImpl.java:96)
+	at com.partick.user.service.impl.UserServiceImpl.login(UserServiceImpl.java:114)
+	at com.partick.user.controller.UserController.login(UserController.java:51)
+	at com.partick.user.controller.UserController$$FastClassBySpringCGLIB$$f198953.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:56)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88)
+	at com.partick.common.aspect.LogAspect.doAround(LogAspect.java:81)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at com.partick.user.controller.UserController$$EnhancerBySpringCGLIB$$498f61c7.login(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2022-03-26 21:29:07.701 INFO  com.partick.common.interceptor.LoginInterceptor   :29   [32m162915775114514432[0;39m ------------- LoginInterceptor 开始 -------------
+2022-03-26 21:29:07.702 INFO  com.partick.common.interceptor.LoginInterceptor   :40   [32m162915775114514432[0;39m 接口登录拦截：，path：http://192.168.43.209:9404/error
+2022-03-26 21:29:07.702 INFO  com.partick.common.interceptor.LoginInterceptor   :44   [32m162915775114514432[0;39m 登录校验开始，token：null
+2022-03-26 21:29:07.702 INFO  com.partick.common.interceptor.LoginInterceptor   :46   [32m162915775114514432[0;39m token为空，请求被拦截
+2022-03-26 21:30:12.991 INFO  com.partick.common.aspect.LogAspect               :52   [32m162916049317138432[0;39m ---------LogAspect 开始-------------
+2022-03-26 21:30:12.991 INFO  com.partick.common.aspect.LogAspect               :53   [32m162916049317138432[0;39m 请求地址：http://192.168.43.209:9404/user/loginPOST
+2022-03-26 21:30:12.992 INFO  com.partick.common.aspect.LogAspect               :54   [32m162916049317138432[0;39m 类名方法：com.partick.user.controller.UserControllerlogin
+2022-03-26 21:30:12.992 INFO  com.partick.common.aspect.LogAspect               :55   [32m162916049317138432[0;39m 远程地址：192.168.43.209
+2022-03-26 21:30:12.992 INFO  com.partick.common.aspect.LogAspect               :75   [32m162916049317138432[0;39m 请求参数：[[{"loginName":"test"}]]
+2022-03-26 21:30:12.993 ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet]   :175  [32m162916049317138432[0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.partick.database.mapper.UserMapper.selectByExample] with root cause
+org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.partick.database.mapper.UserMapper.selectByExample
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:235)
+	at org.apache.ibatis.binding.MapperMethod.<init>(MapperMethod.java:53)
+	at org.apache.ibatis.binding.MapperProxy.lambda$cachedInvoker$0(MapperProxy.java:115)
+	at org.apache.ibatis.binding.MapperProxy$$Lambda$738/1856174960.apply(Unknown Source)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(Unknown Source)
+	at org.apache.ibatis.binding.MapperProxy.cachedInvoker(MapperProxy.java:102)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
+	at com.sun.proxy.$Proxy91.selectByExample(Unknown Source)
+	at com.partick.user.service.impl.UserServiceImpl.selectByLoginName(UserServiceImpl.java:96)
+	at com.partick.user.service.impl.UserServiceImpl.login(UserServiceImpl.java:114)
+	at com.partick.user.controller.UserController.login(UserController.java:51)
+	at com.partick.user.controller.UserController$$FastClassBySpringCGLIB$$f198953.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:56)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88)
+	at com.partick.common.aspect.LogAspect.doAround(LogAspect.java:81)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at com.partick.user.controller.UserController$$EnhancerBySpringCGLIB$$498f61c7.login(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2022-03-26 21:30:12.993 INFO  com.partick.common.interceptor.LoginInterceptor   :29   [32m162916049317138432[0;39m ------------- LoginInterceptor 开始 -------------
+2022-03-26 21:30:12.993 INFO  com.partick.common.interceptor.LoginInterceptor   :40   [32m162916049317138432[0;39m 接口登录拦截：，path：http://192.168.43.209:9404/error
+2022-03-26 21:30:12.994 INFO  com.partick.common.interceptor.LoginInterceptor   :44   [32m162916049317138432[0;39m 登录校验开始，token：null
+2022-03-26 21:30:12.994 INFO  com.partick.common.interceptor.LoginInterceptor   :46   [32m162916049317138432[0;39m token为空，请求被拦截
+2022-03-26 21:34:16.072 INFO  com.partick.common.aspect.LogAspect               :52   [32m162917068872749056[0;39m ---------LogAspect 开始-------------
+2022-03-26 21:34:16.072 INFO  com.partick.common.aspect.LogAspect               :53   [32m162917068872749056[0;39m 请求地址：http://192.168.43.209:9404/user/loginPOST
+2022-03-26 21:34:16.072 INFO  com.partick.common.aspect.LogAspect               :54   [32m162917068872749056[0;39m 类名方法：com.partick.user.controller.UserControllerlogin
+2022-03-26 21:34:16.072 INFO  com.partick.common.aspect.LogAspect               :55   [32m162917068872749056[0;39m 远程地址：192.168.43.209
+2022-03-26 21:34:16.072 INFO  com.partick.common.aspect.LogAspect               :75   [32m162917068872749056[0;39m 请求参数：[[{"loginName":"test"}]]
+2022-03-26 21:34:16.073 ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet]   :175  [32m162917068872749056[0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.partick.database.mapper.UserMapper.selectByExample] with root cause
+org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.partick.database.mapper.UserMapper.selectByExample
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:235)
+	at org.apache.ibatis.binding.MapperMethod.<init>(MapperMethod.java:53)
+	at org.apache.ibatis.binding.MapperProxy.lambda$cachedInvoker$0(MapperProxy.java:115)
+	at org.apache.ibatis.binding.MapperProxy$$Lambda$738/1856174960.apply(Unknown Source)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(Unknown Source)
+	at org.apache.ibatis.binding.MapperProxy.cachedInvoker(MapperProxy.java:102)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
+	at com.sun.proxy.$Proxy91.selectByExample(Unknown Source)
+	at com.partick.user.service.impl.UserServiceImpl.selectByLoginName(UserServiceImpl.java:96)
+	at com.partick.user.service.impl.UserServiceImpl.login(UserServiceImpl.java:114)
+	at com.partick.user.controller.UserController.login(UserController.java:51)
+	at com.partick.user.controller.UserController$$FastClassBySpringCGLIB$$f198953.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:56)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88)
+	at com.partick.common.aspect.LogAspect.doAround(LogAspect.java:81)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at com.partick.user.controller.UserController$$EnhancerBySpringCGLIB$$498f61c7.login(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2022-03-26 21:34:16.074 INFO  com.partick.common.interceptor.LoginInterceptor   :29   [32m162917068872749056[0;39m ------------- LoginInterceptor 开始 -------------
+2022-03-26 21:34:16.074 INFO  com.partick.common.interceptor.LoginInterceptor   :40   [32m162917068872749056[0;39m 接口登录拦截：，path：http://192.168.43.209:9404/error
+2022-03-26 21:34:16.074 INFO  com.partick.common.interceptor.LoginInterceptor   :44   [32m162917068872749056[0;39m 登录校验开始，token：null
+2022-03-26 21:34:16.074 INFO  com.partick.common.interceptor.LoginInterceptor   :46   [32m162917068872749056[0;39m token为空，请求被拦截
+2022-03-26 21:34:24.087 INFO  com.partick.common.aspect.LogAspect               :52   [32m162917102490095616[0;39m ---------LogAspect 开始-------------
+2022-03-26 21:34:24.088 INFO  com.partick.common.aspect.LogAspect               :53   [32m162917102490095616[0;39m 请求地址：http://192.168.43.209:9404/user/loginPOST
+2022-03-26 21:34:24.088 INFO  com.partick.common.aspect.LogAspect               :54   [32m162917102490095616[0;39m 类名方法：com.partick.user.controller.UserControllerlogin
+2022-03-26 21:34:24.088 INFO  com.partick.common.aspect.LogAspect               :55   [32m162917102490095616[0;39m 远程地址：192.168.43.209
+2022-03-26 21:34:24.088 INFO  com.partick.common.aspect.LogAspect               :75   [32m162917102490095616[0;39m 请求参数：[[{"loginName":"test"}]]
+2022-03-26 21:34:24.089 ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet]   :175  [32m162917102490095616[0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.partick.database.mapper.UserMapper.selectByExample] with root cause
+org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.partick.database.mapper.UserMapper.selectByExample
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:235)
+	at org.apache.ibatis.binding.MapperMethod.<init>(MapperMethod.java:53)
+	at org.apache.ibatis.binding.MapperProxy.lambda$cachedInvoker$0(MapperProxy.java:115)
+	at org.apache.ibatis.binding.MapperProxy$$Lambda$738/1856174960.apply(Unknown Source)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(Unknown Source)
+	at org.apache.ibatis.binding.MapperProxy.cachedInvoker(MapperProxy.java:102)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
+	at com.sun.proxy.$Proxy91.selectByExample(Unknown Source)
+	at com.partick.user.service.impl.UserServiceImpl.selectByLoginName(UserServiceImpl.java:96)
+	at com.partick.user.service.impl.UserServiceImpl.login(UserServiceImpl.java:114)
+	at com.partick.user.controller.UserController.login(UserController.java:51)
+	at com.partick.user.controller.UserController$$FastClassBySpringCGLIB$$f198953.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:56)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88)
+	at com.partick.common.aspect.LogAspect.doAround(LogAspect.java:81)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at com.partick.user.controller.UserController$$EnhancerBySpringCGLIB$$498f61c7.login(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2022-03-26 21:34:24.090 INFO  com.partick.common.interceptor.LoginInterceptor   :29   [32m162917102490095616[0;39m ------------- LoginInterceptor 开始 -------------
+2022-03-26 21:34:24.090 INFO  com.partick.common.interceptor.LoginInterceptor   :40   [32m162917102490095616[0;39m 接口登录拦截：，path：http://192.168.43.209:9404/error
+2022-03-26 21:34:24.090 INFO  com.partick.common.interceptor.LoginInterceptor   :44   [32m162917102490095616[0;39m 登录校验开始，token：null
+2022-03-26 21:34:24.090 INFO  com.partick.common.interceptor.LoginInterceptor   :46   [32m162917102490095616[0;39m token为空，请求被拦截
+2022-03-26 21:42:21.484 INFO  com.partick.common.aspect.LogAspect               :52   [32m162919104838242304[0;39m ---------LogAspect 开始-------------
+2022-03-26 21:42:21.484 INFO  com.partick.common.aspect.LogAspect               :53   [32m162919104838242304[0;39m 请求地址：http://192.168.43.209:9404/user/loginPOST
+2022-03-26 21:42:21.485 INFO  com.partick.common.aspect.LogAspect               :54   [32m162919104838242304[0;39m 类名方法：com.partick.user.controller.UserControllerlogin
+2022-03-26 21:42:21.485 INFO  com.partick.common.aspect.LogAspect               :55   [32m162919104838242304[0;39m 远程地址：192.168.43.209
+2022-03-26 21:42:21.485 INFO  com.partick.common.aspect.LogAspect               :75   [32m162919104838242304[0;39m 请求参数：[[{"loginName":"test"}]]
+2022-03-26 21:42:21.485 ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet]   :175  [32m162919104838242304[0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.partick.database.mapper.UserMapper.selectByExample] with root cause
+org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.partick.database.mapper.UserMapper.selectByExample
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:235)
+	at org.apache.ibatis.binding.MapperMethod.<init>(MapperMethod.java:53)
+	at org.apache.ibatis.binding.MapperProxy.lambda$cachedInvoker$0(MapperProxy.java:115)
+	at org.apache.ibatis.binding.MapperProxy$$Lambda$738/1856174960.apply(Unknown Source)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(Unknown Source)
+	at org.apache.ibatis.binding.MapperProxy.cachedInvoker(MapperProxy.java:102)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
+	at com.sun.proxy.$Proxy91.selectByExample(Unknown Source)
+	at com.partick.user.service.impl.UserServiceImpl.selectByLoginName(UserServiceImpl.java:96)
+	at com.partick.user.service.impl.UserServiceImpl.login(UserServiceImpl.java:114)
+	at com.partick.user.controller.UserController.login(UserController.java:51)
+	at com.partick.user.controller.UserController$$FastClassBySpringCGLIB$$f198953.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:56)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88)
+	at com.partick.common.aspect.LogAspect.doAround(LogAspect.java:81)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at com.partick.user.controller.UserController$$EnhancerBySpringCGLIB$$498f61c7.login(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2022-03-26 21:42:21.486 INFO  com.partick.common.interceptor.LoginInterceptor   :29   [32m162919104838242304[0;39m ------------- LoginInterceptor 开始 -------------
+2022-03-26 21:42:21.486 INFO  com.partick.common.interceptor.LoginInterceptor   :40   [32m162919104838242304[0;39m 接口登录拦截：，path：http://192.168.43.209:9404/error
+2022-03-26 21:42:21.486 INFO  com.partick.common.interceptor.LoginInterceptor   :44   [32m162919104838242304[0;39m 登录校验开始，token：null
+2022-03-26 21:42:21.487 INFO  com.partick.common.interceptor.LoginInterceptor   :46   [32m162919104838242304[0;39m token为空，请求被拦截
+2022-03-26 21:44:07.785 INFO  com.alibaba.nacos.client.config.impl.ClientWorker :510  [32m                  [0;39m [fixed-101.34.34.129_8848] [polling-resp] config changed. dataId=wiki-user-dev.yml, group=DEFAULT_GROUP
+2022-03-26 21:44:07.786 INFO  com.alibaba.nacos.client.config.impl.ClientWorker :622  [32m                  [0;39m get changedGroupKeys:[wiki-user-dev.yml+DEFAULT_GROUP]
+2022-03-26 21:44:07.866 INFO  com.alibaba.nacos.client.config.impl.ClientWorker :640  [32m                  [0;39m [fixed-101.34.34.129_8848] [data-received] dataId=wiki-user-dev.yml, group=DEFAULT_GROUP, tenant=null, md5=b90693f7b2f3e6d97aca01a770ec2f4a, content=spring:
+  application:
+    name: wiki-user
+  datasource: #JDBC连接配置
+    url: jdbc:mysql://gz-cynosdbm..., type=yaml
+2022-03-26 21:44:07.866 INFO  com.alibaba.nacos.client.config.impl.CacheData    :199  [32m                  [0;39m [fixed-101.34.34.129_8848] [notify-context] dataId=wiki-user-dev.yml, group=DEFAULT_GROUP, md5=b90693f7b2f3e6d97aca01a770ec2f4a
+2022-03-26 21:44:09.476 WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder :87   [32m                  [0;39m Ignore the empty nacos configuration and get it based on dataId[wiki-database] & group[DEFAULT_GROUP]
+2022-03-26 21:44:09.547 WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder :87   [32m                  [0;39m Ignore the empty nacos configuration and get it based on dataId[wiki-database.yml] & group[DEFAULT_GROUP]
+2022-03-26 21:44:09.629 INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration    :112  [32m                  [0;39m Located property source: [BootstrapPropertySource {name='bootstrapProperties-wiki-database-dev.yml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-wiki-database.yml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-wiki-database,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-common.yml,DEFAULT_GROUP'}]
+2022-03-26 21:44:09.631 INFO  org.springframework.boot.SpringApplication        :655  [32m                  [0;39m The following profiles are active: dev
+2022-03-26 21:44:09.639 INFO  org.springframework.boot.SpringApplication        :61   [32m                  [0;39m Started application in 1.768 seconds (JVM running for 995.84)
+2022-03-26 21:44:09.671 INFO  o.s.cloud.endpoint.event.RefreshEventListener     :73   [32m                  [0;39m Refresh keys changed: [mybatis.mapper-locations, mybatis.configuration.log-impl, spring.application.name, server.port]
+2022-03-26 21:44:09.671 INFO  com.alibaba.nacos.client.config.impl.CacheData    :222  [32m                  [0;39m [fixed-101.34.34.129_8848] [notify-ok] dataId=wiki-user-dev.yml, group=DEFAULT_GROUP, md5=b90693f7b2f3e6d97aca01a770ec2f4a, listener=com.alibaba.cloud.nacos.refresh.NacosContextRefresher$1@4e48f8a7 
+2022-03-26 21:44:09.672 INFO  com.alibaba.nacos.client.config.impl.CacheData    :248  [32m                  [0;39m [fixed-101.34.34.129_8848] [notify-listener] time cost=1806ms in ClientWorker, dataId=wiki-user-dev.yml, group=DEFAULT_GROUP, md5=b90693f7b2f3e6d97aca01a770ec2f4a, listener=com.alibaba.cloud.nacos.refresh.NacosContextRefresher$1@4e48f8a7 
+2022-03-26 21:44:47.906 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 6.1.6.Final
+2022-03-26 21:44:49.256 INFO  c.a.n.client.config.impl.LocalConfigInfoProcessor :212  [32m                  [0;39m LOCAL_SNAPSHOT_PATH:C:\Users\partick_peng\nacos\config
+2022-03-26 21:44:49.333 INFO  com.alibaba.nacos.client.config.utils.JvmUtil     :49   [32m                  [0;39m isMultiInstance:false
+2022-03-26 21:44:49.409 WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder :87   [32m                  [0;39m Ignore the empty nacos configuration and get it based on dataId[wiki-user] & group[DEFAULT_GROUP]
+2022-03-26 21:44:49.483 WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder :87   [32m                  [0;39m Ignore the empty nacos configuration and get it based on dataId[wiki-user.yml] & group[DEFAULT_GROUP]
+2022-03-26 21:44:49.560 INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration    :112  [32m                  [0;39m Located property source: [BootstrapPropertySource {name='bootstrapProperties-wiki-user-dev.yml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-wiki-user.yml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-wiki-user,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-common.yml,DEFAULT_GROUP'}]
+2022-03-26 21:44:49.563 INFO  com.partick.user.WikiUserApplication              :655  [32m                  [0;39m The following profiles are active: dev
+2022-03-26 21:44:50.173 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :249  [32m                  [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-03-26 21:44:50.175 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :127  [32m                  [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-03-26 21:44:50.201 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :187  [32m                  [0;39m Finished Spring Data repository scanning in 15ms. Found 0 Redis repository interfaces.
+2022-03-26 21:44:50.354 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m                  [0;39m BeanFactory id=49595db8-e6c2-3a49-99ee-d6f6cf8c84b8
+2022-03-26 21:44:50.511 ERROR org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m An incompatible version [1.1.33] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2022-03-26 21:44:50.775 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 9404 (http)
+2022-03-26 21:44:50.782 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-9404"]
+2022-03-26 21:44:50.782 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-03-26 21:44:50.782 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-03-26 21:44:50.900 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-03-26 21:44:50.900 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :285  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1324 ms
+2022-03-26 21:44:51.478 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m                  [0;39m No URLs will be polled as dynamic configuration sources.
+2022-03-26 21:44:51.478 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m                  [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-03-26 21:44:51.481 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m                  [0;39m No URLs will be polled as dynamic configuration sources.
+2022-03-26 21:44:51.481 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m                  [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-03-26 21:44:51.591 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2022-03-26 21:44:52.404 INFO  com.alibaba.nacos.client.naming                   :64   [32m                  [0;39m initializer namespace from System Property :null
+2022-03-26 21:44:52.405 INFO  com.alibaba.nacos.client.naming                   :73   [32m                  [0;39m initializer namespace from System Environment :null
+2022-03-26 21:44:52.405 INFO  com.alibaba.nacos.client.naming                   :83   [32m                  [0;39m initializer namespace from System Property :null
+2022-03-26 21:44:53.744 INFO  com.alibaba.nacos.client.naming                   :190  [32m                  [0;39m new ips(1) service: DEFAULT_GROUP@@wiki-user@@DEFAULT -> [{"instanceId":"192.168.43.209#9404#DEFAULT#DEFAULT_GROUP@@wiki-user","ip":"192.168.43.209","port":9404,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@wiki-user","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+2022-03-26 21:44:53.748 INFO  com.alibaba.nacos.client.naming                   :227  [32m                  [0;39m current ips:(1) service: DEFAULT_GROUP@@wiki-user@@DEFAULT -> [{"instanceId":"192.168.43.209#9404#DEFAULT#DEFAULT_GROUP@@wiki-user","ip":"192.168.43.209","port":9404,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@wiki-user","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+2022-03-26 21:44:53.749 INFO  com.alibaba.nacos.client.naming                   :83   [32m                  [0;39m [LISTENER] adding DEFAULT_GROUP@@wiki-user with DEFAULT to listener map
+2022-03-26 21:44:53.749 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-9404"]
+2022-03-26 21:44:53.768 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 9404 (http) with context path ''
+2022-03-26 21:44:53.772 INFO  com.alibaba.nacos.client.naming                   :81   [32m                  [0;39m [BEAT] adding beat: BeatInfo{port=9404, ip='192.168.43.209', weight=1.0, serviceName='DEFAULT_GROUP@@wiki-user', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+2022-03-26 21:44:53.772 INFO  com.alibaba.nacos.client.naming                   :223  [32m                  [0;39m [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@wiki-user with instance: Instance{instanceId='null', ip='192.168.43.209', port=9404, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+2022-03-26 21:44:53.844 INFO  c.a.cloud.nacos.registry.NacosServiceRegistry     :71   [32m                  [0;39m nacos registry, DEFAULT_GROUP wiki-user 192.168.43.209:9404 register finished
+2022-03-26 21:44:54.519 INFO  com.partick.user.WikiUserApplication              :61   [32m                  [0;39m Started WikiUserApplication in 7.646 seconds (JVM running for 8.914)
+2022-03-26 21:44:54.522 INFO  com.alibaba.nacos.client.config.impl.ClientWorker :262  [32m                  [0;39m [fixed-101.34.34.129_8848] [subscribe] wiki-user+DEFAULT_GROUP
+2022-03-26 21:44:54.523 INFO  com.alibaba.nacos.client.config.impl.CacheData    :93   [32m                  [0;39m [fixed-101.34.34.129_8848] [add-listener] ok, tenant=, dataId=wiki-user, group=DEFAULT_GROUP, cnt=1
+2022-03-26 21:44:54.523 INFO  com.alibaba.nacos.client.config.impl.ClientWorker :262  [32m                  [0;39m [fixed-101.34.34.129_8848] [subscribe] wiki-user-dev.yml+DEFAULT_GROUP
+2022-03-26 21:44:54.524 INFO  com.alibaba.nacos.client.config.impl.CacheData    :93   [32m                  [0;39m [fixed-101.34.34.129_8848] [add-listener] ok, tenant=, dataId=wiki-user-dev.yml, group=DEFAULT_GROUP, cnt=1
+2022-03-26 21:44:54.524 INFO  com.alibaba.nacos.client.config.impl.ClientWorker :262  [32m                  [0;39m [fixed-101.34.34.129_8848] [subscribe] wiki-user.yml+DEFAULT_GROUP
+2022-03-26 21:44:54.524 INFO  com.alibaba.nacos.client.config.impl.CacheData    :93   [32m                  [0;39m [fixed-101.34.34.129_8848] [add-listener] ok, tenant=, dataId=wiki-user.yml, group=DEFAULT_GROUP, cnt=1
+2022-03-26 21:44:54.525 INFO  com.alibaba.nacos.client.config.impl.ClientWorker :262  [32m                  [0;39m [fixed-101.34.34.129_8848] [subscribe] common.yml+DEFAULT_GROUP
+2022-03-26 21:44:54.525 INFO  com.alibaba.nacos.client.config.impl.CacheData    :93   [32m                  [0;39m [fixed-101.34.34.129_8848] [add-listener] ok, tenant=, dataId=common.yml, group=DEFAULT_GROUP, cnt=1
+2022-03-26 21:45:17.034 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-26 21:45:17.034 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2022-03-26 21:45:17.041 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 6 ms
+2022-03-26 21:45:17.117 INFO  com.partick.common.aspect.LogAspect               :52   [32m162919841492242432[0;39m ---------LogAspect 开始-------------
+2022-03-26 21:45:17.118 INFO  com.partick.common.aspect.LogAspect               :53   [32m162919841492242432[0;39m 请求地址：http://192.168.43.209:9404/user/loginPOST
+2022-03-26 21:45:17.118 INFO  com.partick.common.aspect.LogAspect               :54   [32m162919841492242432[0;39m 类名方法：com.partick.user.controller.UserControllerlogin
+2022-03-26 21:45:17.118 INFO  com.partick.common.aspect.LogAspect               :55   [32m162919841492242432[0;39m 远程地址：192.168.43.209
+2022-03-26 21:45:17.169 INFO  com.partick.common.aspect.LogAspect               :75   [32m162919841492242432[0;39m 请求参数：[[{"loginName":"test"}]]
+2022-03-26 21:45:17.227 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m162919841492242432[0;39m HikariPool-1 - Starting...
+2022-03-26 21:45:17.930 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m162919841492242432[0;39m HikariPool-1 - Start completed.
+2022-03-26 21:45:18.019 INFO  com.partick.user.service.impl.UserServiceImpl     :124  [32m162919841492242432[0;39m 生成token并放入redis中
+2022-03-26 21:45:19.540 INFO  com.partick.common.aspect.LogAspect               :87   [32m162919841492242432[0;39m 返回结果：{"content":{"id":1,"loginName":"test","name":"测试用户","token":"162919845279698944"},"message":"","success":true}
+2022-03-26 21:45:19.541 INFO  com.partick.common.aspect.LogAspect               :88   [32m162919841492242432[0;39m ------------ 结束 耗时：2425ms------------------
+2022-03-26 21:45:33.160 INFO  com.partick.common.interceptor.LoginInterceptor   :29   [32m                  [0;39m ------------- LoginInterceptor 开始 -------------
+2022-03-26 21:45:33.161 INFO  com.partick.common.interceptor.LoginInterceptor   :40   [32m                  [0;39m 接口登录拦截：，path：http://192.168.43.209:9404/user/list
+2022-03-26 21:45:33.161 INFO  com.partick.common.interceptor.LoginInterceptor   :44   [32m                  [0;39m 登录校验开始，token：162919845279698944
+2022-03-26 21:45:33.240 INFO  com.partick.common.interceptor.LoginInterceptor   :56   [32m                  [0;39m 已登录：{"id":1,"loginName":"test","name":"测试用户","token":"162919845279698944"}
+2022-03-26 21:45:33.253 INFO  com.partick.common.aspect.LogAspect               :52   [32m162919909171531776[0;39m ---------LogAspect 开始-------------
+2022-03-26 21:45:33.253 INFO  com.partick.common.aspect.LogAspect               :53   [32m162919909171531776[0;39m 请求地址：http://192.168.43.209:9404/user/listGET
+2022-03-26 21:45:33.253 INFO  com.partick.common.aspect.LogAspect               :54   [32m162919909171531776[0;39m 类名方法：com.partick.user.controller.UserControllerlist
+2022-03-26 21:45:33.253 INFO  com.partick.common.aspect.LogAspect               :55   [32m162919909171531776[0;39m 远程地址：192.168.43.209
+2022-03-26 21:45:33.255 INFO  com.partick.common.aspect.LogAspect               :75   [32m162919909171531776[0;39m 请求参数：[[{"page":0,"size":0}]]
+2022-03-26 21:45:33.683 INFO  com.partick.common.aspect.LogAspect               :87   [32m162919909171531776[0;39m 返回结果：{"content":{"list":[{"id":1,"loginName":"test","name":"测试用户"},{"id":102669832469745664,"loginName":"test1","name":"test1"}],"total":2},"message":"","success":true}
+2022-03-26 21:45:33.683 INFO  com.partick.common.aspect.LogAspect               :88   [32m162919909171531776[0;39m ------------ 结束 耗时：431ms------------------
+2022-03-26 21:45:33.686 INFO  com.partick.common.interceptor.LoginInterceptor   :64   [32m162919909171531776[0;39m ------------- LoginInterceptor 结束 耗时：526 ms -------------
+2022-03-26 21:46:00.839 INFO  com.partick.common.interceptor.LoginInterceptor   :29   [32m                  [0;39m ------------- LoginInterceptor 开始 -------------
+2022-03-26 21:46:00.840 INFO  com.partick.common.interceptor.LoginInterceptor   :40   [32m                  [0;39m 接口登录拦截：，path：http://192.168.43.209:9404/user/save
+2022-03-26 21:46:00.840 INFO  com.partick.common.interceptor.LoginInterceptor   :44   [32m                  [0;39m 登录校验开始，token：162919845279698944
+2022-03-26 21:46:00.920 INFO  com.partick.common.interceptor.LoginInterceptor   :56   [32m                  [0;39m 已登录：{"id":1,"loginName":"test","name":"测试用户","token":"162919845279698944"}
+2022-03-26 21:46:00.924 INFO  com.partick.common.aspect.LogAspect               :52   [32m162920025236312064[0;39m ---------LogAspect 开始-------------
+2022-03-26 21:46:00.925 INFO  com.partick.common.aspect.LogAspect               :53   [32m162920025236312064[0;39m 请求地址：http://192.168.43.209:9404/user/savePOST
+2022-03-26 21:46:00.925 INFO  com.partick.common.aspect.LogAspect               :54   [32m162920025236312064[0;39m 类名方法：com.partick.user.controller.UserControllersave
+2022-03-26 21:46:00.925 INFO  com.partick.common.aspect.LogAspect               :55   [32m162920025236312064[0;39m 远程地址：192.168.43.209
+2022-03-26 21:46:00.927 INFO  com.partick.common.aspect.LogAspect               :75   [32m162920025236312064[0;39m 请求参数：[[{"loginName":"Springcloud改造测试用户","name":"test2"}]]
+2022-03-26 21:46:01.094 INFO  com.partick.common.aspect.LogAspect               :87   [32m162920025236312064[0;39m 返回结果：{"message":"","success":true}
+2022-03-26 21:46:01.094 INFO  com.partick.common.aspect.LogAspect               :88   [32m162920025236312064[0;39m ------------ 结束 耗时：170ms------------------
+2022-03-26 21:46:01.095 INFO  com.partick.common.interceptor.LoginInterceptor   :64   [32m162920025236312064[0;39m ------------- LoginInterceptor 结束 耗时：255 ms -------------
+2022-03-26 21:46:01.123 INFO  com.partick.common.interceptor.LoginInterceptor   :29   [32m                  [0;39m ------------- LoginInterceptor 开始 -------------
+2022-03-26 21:46:01.123 INFO  com.partick.common.interceptor.LoginInterceptor   :40   [32m                  [0;39m 接口登录拦截：，path：http://192.168.43.209:9404/user/list
+2022-03-26 21:46:01.124 INFO  com.partick.common.interceptor.LoginInterceptor   :44   [32m                  [0;39m 登录校验开始，token：162919845279698944
+2022-03-26 21:46:01.220 INFO  com.partick.common.interceptor.LoginInterceptor   :56   [32m                  [0;39m 已登录：{"id":1,"loginName":"test","name":"测试用户","token":"162919845279698944"}
+2022-03-26 21:46:01.224 INFO  com.partick.common.aspect.LogAspect               :52   [32m162920026494603264[0;39m ---------LogAspect 开始-------------
+2022-03-26 21:46:01.224 INFO  com.partick.common.aspect.LogAspect               :53   [32m162920026494603264[0;39m 请求地址：http://192.168.43.209:9404/user/listGET
+2022-03-26 21:46:01.225 INFO  com.partick.common.aspect.LogAspect               :54   [32m162920026494603264[0;39m 类名方法：com.partick.user.controller.UserControllerlist
+2022-03-26 21:46:01.225 INFO  com.partick.common.aspect.LogAspect               :55   [32m162920026494603264[0;39m 远程地址：192.168.43.209
+2022-03-26 21:46:01.225 INFO  com.partick.common.aspect.LogAspect               :75   [32m162920026494603264[0;39m 请求参数：[[{"page":0,"size":10}]]
+2022-03-26 21:46:01.302 INFO  com.partick.common.aspect.LogAspect               :87   [32m162920026494603264[0;39m 返回结果：{"content":{"list":[{"id":1,"loginName":"test","name":"测试用户"},{"id":102669832469745664,"loginName":"test1","name":"test1"},{"id":162920025584439296,"loginName":"Springcloud改造测试用户","name":"test2"}],"total":3},"message":"","success":true}
+2022-03-26 21:46:01.302 INFO  com.partick.common.aspect.LogAspect               :88   [32m162920026494603264[0;39m ------------ 结束 耗时：78ms------------------
+2022-03-26 21:46:01.303 INFO  com.partick.common.interceptor.LoginInterceptor   :64   [32m162920026494603264[0;39m ------------- LoginInterceptor 结束 耗时：180 ms -------------
+2022-03-26 21:54:20.393 INFO  com.partick.common.interceptor.LoginInterceptor   :29   [32m                  [0;39m ------------- LoginInterceptor 开始 -------------
+2022-03-26 21:54:20.393 INFO  com.partick.common.interceptor.LoginInterceptor   :40   [32m                  [0;39m 接口登录拦截：，path：http://192.168.43.209:9404/user/logout/162919845279698944
+2022-03-26 21:54:20.393 INFO  com.partick.common.interceptor.LoginInterceptor   :44   [32m                  [0;39m 登录校验开始，token：162919845279698944
+2022-03-26 21:54:20.468 INFO  com.partick.common.interceptor.LoginInterceptor   :56   [32m                  [0;39m 已登录：{"id":1,"loginName":"test","name":"测试用户","token":"162919845279698944"}
+2022-03-26 21:54:20.475 INFO  com.partick.common.aspect.LogAspect               :52   [32m162922120505069568[0;39m ---------LogAspect 开始-------------
+2022-03-26 21:54:20.476 INFO  com.partick.common.aspect.LogAspect               :53   [32m162922120505069568[0;39m 请求地址：http://192.168.43.209:9404/user/logout/162919845279698944GET
+2022-03-26 21:54:20.476 INFO  com.partick.common.aspect.LogAspect               :54   [32m162922120505069568[0;39m 类名方法：com.partick.user.controller.UserControllerlogout
+2022-03-26 21:54:20.476 INFO  com.partick.common.aspect.LogAspect               :55   [32m162922120505069568[0;39m 远程地址：192.168.43.209
+2022-03-26 21:54:20.476 INFO  com.partick.common.aspect.LogAspect               :75   [32m162922120505069568[0;39m 请求参数：[["162919845279698944"]]
+2022-03-26 21:54:20.476 INFO  com.partick.user.service.impl.UserServiceImpl     :138  [32m162922120505069568[0;39m 从redis中删除token：162919845279698944
+2022-03-26 21:54:20.547 INFO  com.partick.common.aspect.LogAspect               :87   [32m162922120505069568[0;39m 返回结果：{"message":"","success":true}
+2022-03-26 21:54:20.548 INFO  com.partick.common.aspect.LogAspect               :88   [32m162922120505069568[0;39m ------------ 结束 耗时：73ms------------------
+2022-03-26 21:54:20.549 INFO  com.partick.common.interceptor.LoginInterceptor   :64   [32m162922120505069568[0;39m ------------- LoginInterceptor 结束 耗时：156 ms -------------
+2022-03-26 21:55:59.464 INFO  com.partick.common.aspect.LogAspect               :52   [32m162922535695028224[0;39m ---------LogAspect 开始-------------
+2022-03-26 21:55:59.464 INFO  com.partick.common.aspect.LogAspect               :53   [32m162922535695028224[0;39m 请求地址：http://192.168.43.209:9404/user/loginPOST
+2022-03-26 21:55:59.464 INFO  com.partick.common.aspect.LogAspect               :54   [32m162922535695028224[0;39m 类名方法：com.partick.user.controller.UserControllerlogin
+2022-03-26 21:55:59.464 INFO  com.partick.common.aspect.LogAspect               :55   [32m162922535695028224[0;39m 远程地址：192.168.43.209
+2022-03-26 21:55:59.465 INFO  com.partick.common.aspect.LogAspect               :75   [32m162922535695028224[0;39m 请求参数：[[{"loginName":"test"}]]
+2022-03-26 21:55:59.539 INFO  com.partick.user.service.impl.UserServiceImpl     :124  [32m162922535695028224[0;39m 生成token并放入redis中
+2022-03-26 21:55:59.599 INFO  com.partick.common.aspect.LogAspect               :87   [32m162922535695028224[0;39m 返回结果：{"content":{"id":1,"loginName":"test","name":"测试用户","token":"162922536009601024"},"message":"","success":true}
+2022-03-26 21:55:59.599 INFO  com.partick.common.aspect.LogAspect               :88   [32m162922535695028224[0;39m ------------ 结束 耗时：135ms------------------
+2022-03-26 22:04:46.943 INFO  com.partick.common.interceptor.LoginInterceptor   :29   [32m                  [0;39m ------------- LoginInterceptor 开始 -------------
+2022-03-26 22:04:46.943 INFO  com.partick.common.interceptor.LoginInterceptor   :40   [32m                  [0;39m 接口登录拦截：，path：http://192.168.43.209:9404/user/logout/162922536009601024
+2022-03-26 22:04:46.944 INFO  com.partick.common.interceptor.LoginInterceptor   :44   [32m                  [0;39m 登录校验开始，token：162922536009601024
+2022-03-26 22:04:47.028 INFO  com.partick.common.interceptor.LoginInterceptor   :56   [32m                  [0;39m 已登录：{"id":1,"loginName":"test","name":"测试用户","token":"162922536009601024"}
+2022-03-26 22:04:47.029 INFO  com.partick.common.aspect.LogAspect               :52   [32m162924748463017984[0;39m ---------LogAspect 开始-------------
+2022-03-26 22:04:47.029 INFO  com.partick.common.aspect.LogAspect               :53   [32m162924748463017984[0;39m 请求地址：http://192.168.43.209:9404/user/logout/162922536009601024GET
+2022-03-26 22:04:47.029 INFO  com.partick.common.aspect.LogAspect               :54   [32m162924748463017984[0;39m 类名方法：com.partick.user.controller.UserControllerlogout
+2022-03-26 22:04:47.029 INFO  com.partick.common.aspect.LogAspect               :55   [32m162924748463017984[0;39m 远程地址：192.168.43.209
+2022-03-26 22:04:47.030 INFO  com.partick.common.aspect.LogAspect               :75   [32m162924748463017984[0;39m 请求参数：[["162922536009601024"]]
+2022-03-26 22:04:47.030 INFO  com.partick.user.service.impl.UserServiceImpl     :138  [32m162924748463017984[0;39m 从redis中删除token：162922536009601024
+2022-03-26 22:04:47.083 INFO  com.partick.common.aspect.LogAspect               :87   [32m162924748463017984[0;39m 返回结果：{"message":"","success":true}
+2022-03-26 22:04:47.083 INFO  com.partick.common.aspect.LogAspect               :88   [32m162924748463017984[0;39m ------------ 结束 耗时：54ms------------------
+2022-03-26 22:04:47.084 INFO  com.partick.common.interceptor.LoginInterceptor   :64   [32m162924748463017984[0;39m ------------- LoginInterceptor 结束 耗时：141 ms -------------
+2022-03-26 22:04:49.331 INFO  com.partick.common.aspect.LogAspect               :52   [32m162924758118305792[0;39m ---------LogAspect 开始-------------
+2022-03-26 22:04:49.332 INFO  com.partick.common.aspect.LogAspect               :53   [32m162924758118305792[0;39m 请求地址：http://192.168.43.209:9404/user/loginPOST
+2022-03-26 22:04:49.332 INFO  com.partick.common.aspect.LogAspect               :54   [32m162924758118305792[0;39m 类名方法：com.partick.user.controller.UserControllerlogin
+2022-03-26 22:04:49.332 INFO  com.partick.common.aspect.LogAspect               :55   [32m162924758118305792[0;39m 远程地址：192.168.43.209
+2022-03-26 22:04:49.332 INFO  com.partick.common.aspect.LogAspect               :75   [32m162924758118305792[0;39m 请求参数：[[{"loginName":"test"}]]
+2022-03-26 22:04:49.432 INFO  com.partick.user.service.impl.UserServiceImpl     :124  [32m162924758118305792[0;39m 生成token并放入redis中
+2022-03-26 22:04:49.493 INFO  com.partick.common.aspect.LogAspect               :87   [32m162924758118305792[0;39m 返回结果：{"content":{"id":1,"loginName":"test","name":"测试用户","token":"162924758541930496"},"message":"","success":true}
+2022-03-26 22:04:49.493 INFO  com.partick.common.aspect.LogAspect               :88   [32m162924758118305792[0;39m ------------ 结束 耗时：162ms------------------
+2022-03-26 22:05:25.544 INFO  com.partick.common.interceptor.LoginInterceptor   :29   [32m162919909171531776[0;39m ------------- LoginInterceptor 开始 -------------
+2022-03-26 22:05:25.544 INFO  com.partick.common.interceptor.LoginInterceptor   :40   [32m162919909171531776[0;39m 接口登录拦截：，path：http://192.168.43.209:9404/user/list
+2022-03-26 22:05:25.544 INFO  com.partick.common.interceptor.LoginInterceptor   :44   [32m162919909171531776[0;39m 登录校验开始，token：162924758541930496
+2022-03-26 22:05:25.614 INFO  com.partick.common.interceptor.LoginInterceptor   :56   [32m162919909171531776[0;39m 已登录：{"id":1,"loginName":"test","name":"测试用户","token":"162924758541930496"}
+2022-03-26 22:05:25.616 INFO  com.partick.common.aspect.LogAspect               :52   [32m162924910308626432[0;39m ---------LogAspect 开始-------------
+2022-03-26 22:05:25.616 INFO  com.partick.common.aspect.LogAspect               :53   [32m162924910308626432[0;39m 请求地址：http://192.168.43.209:9404/user/listGET
+2022-03-26 22:05:25.616 INFO  com.partick.common.aspect.LogAspect               :54   [32m162924910308626432[0;39m 类名方法：com.partick.user.controller.UserControllerlist
+2022-03-26 22:05:25.616 INFO  com.partick.common.aspect.LogAspect               :55   [32m162924910308626432[0;39m 远程地址：192.168.43.209
+2022-03-26 22:05:25.616 INFO  com.partick.common.aspect.LogAspect               :75   [32m162924910308626432[0;39m 请求参数：[[{"page":0,"size":0}]]
+2022-03-26 22:05:25.771 INFO  com.partick.common.aspect.LogAspect               :87   [32m162924910308626432[0;39m 返回结果：{"content":{"list":[{"id":1,"loginName":"test","name":"测试用户"},{"id":102669832469745664,"loginName":"test1","name":"test1"},{"id":162920025584439296,"loginName":"Springcloud改造测试用户","name":"test2"}],"total":3},"message":"","success":true}
+2022-03-26 22:05:25.771 INFO  com.partick.common.aspect.LogAspect               :88   [32m162924910308626432[0;39m ------------ 结束 耗时：155ms------------------
+2022-03-26 22:05:25.772 INFO  com.partick.common.interceptor.LoginInterceptor   :64   [32m162924910308626432[0;39m ------------- LoginInterceptor 结束 耗时：228 ms -------------
+2022-03-26 22:11:17.467 INFO  com.partick.common.interceptor.LoginInterceptor   :29   [32m162920026494603264[0;39m ------------- LoginInterceptor 开始 -------------
+2022-03-26 22:11:17.467 INFO  com.partick.common.interceptor.LoginInterceptor   :40   [32m162920026494603264[0;39m 接口登录拦截：，path：http://192.168.43.209:9404/user/logout/162924758541930496
+2022-03-26 22:11:17.467 INFO  com.partick.common.interceptor.LoginInterceptor   :44   [32m162920026494603264[0;39m 登录校验开始，token：162924758541930496
+2022-03-26 22:11:17.526 INFO  com.partick.common.interceptor.LoginInterceptor   :56   [32m162920026494603264[0;39m 已登录：{"id":1,"loginName":"test","name":"测试用户","token":"162924758541930496"}
+2022-03-26 22:11:17.527 INFO  com.partick.common.aspect.LogAspect               :52   [32m162926386330341376[0;39m ---------LogAspect 开始-------------
+2022-03-26 22:11:17.527 INFO  com.partick.common.aspect.LogAspect               :53   [32m162926386330341376[0;39m 请求地址：http://192.168.43.209:9404/user/logout/162924758541930496GET
+2022-03-26 22:11:17.527 INFO  com.partick.common.aspect.LogAspect               :54   [32m162926386330341376[0;39m 类名方法：com.partick.user.controller.UserControllerlogout
+2022-03-26 22:11:17.527 INFO  com.partick.common.aspect.LogAspect               :55   [32m162926386330341376[0;39m 远程地址：192.168.43.209
+2022-03-26 22:11:17.527 INFO  com.partick.common.aspect.LogAspect               :75   [32m162926386330341376[0;39m 请求参数：[["162924758541930496"]]
+2022-03-26 22:11:17.527 INFO  com.partick.user.service.impl.UserServiceImpl     :138  [32m162926386330341376[0;39m 从redis中删除token：162924758541930496
+2022-03-26 22:11:17.581 INFO  com.partick.common.aspect.LogAspect               :87   [32m162926386330341376[0;39m 返回结果：{"message":"","success":true}
+2022-03-26 22:11:17.581 INFO  com.partick.common.aspect.LogAspect               :88   [32m162926386330341376[0;39m ------------ 结束 耗时：54ms------------------
+2022-03-26 22:11:17.582 INFO  com.partick.common.interceptor.LoginInterceptor   :64   [32m162926386330341376[0;39m ------------- LoginInterceptor 结束 耗时：115 ms -------------
+2022-03-26 22:11:19.181 INFO  com.partick.common.aspect.LogAspect               :52   [32m162926393267720192[0;39m ---------LogAspect 开始-------------
+2022-03-26 22:11:19.181 INFO  com.partick.common.aspect.LogAspect               :53   [32m162926393267720192[0;39m 请求地址：http://192.168.43.209:9404/user/loginPOST
+2022-03-26 22:11:19.181 INFO  com.partick.common.aspect.LogAspect               :54   [32m162926393267720192[0;39m 类名方法：com.partick.user.controller.UserControllerlogin
+2022-03-26 22:11:19.181 INFO  com.partick.common.aspect.LogAspect               :55   [32m162926393267720192[0;39m 远程地址：192.168.43.209
+2022-03-26 22:11:19.182 INFO  com.partick.common.aspect.LogAspect               :75   [32m162926393267720192[0;39m 请求参数：[[{"loginName":"test"}]]
+2022-03-26 22:11:19.279 INFO  com.partick.user.service.impl.UserServiceImpl     :124  [32m162926393267720192[0;39m 生成token并放入redis中
+2022-03-26 22:11:19.352 INFO  com.partick.common.aspect.LogAspect               :87   [32m162926393267720192[0;39m 返回结果：{"content":{"id":1,"loginName":"test","name":"测试用户","token":"162926393678761984"},"message":"","success":true}
+2022-03-26 22:11:19.352 INFO  com.partick.common.aspect.LogAspect               :88   [32m162926393267720192[0;39m ------------ 结束 耗时：171ms------------------
+2022-03-26 22:11:36.429 INFO  com.partick.common.interceptor.LoginInterceptor   :29   [32m162922120505069568[0;39m ------------- LoginInterceptor 开始 -------------
+2022-03-26 22:11:36.430 INFO  com.partick.common.interceptor.LoginInterceptor   :40   [32m162922120505069568[0;39m 接口登录拦截：，path：http://192.168.43.209:9404/user/list
+2022-03-26 22:11:36.430 INFO  com.partick.common.interceptor.LoginInterceptor   :44   [32m162922120505069568[0;39m 登录校验开始，token：162926393678761984
+2022-03-26 22:11:36.486 INFO  com.partick.common.interceptor.LoginInterceptor   :56   [32m162922120505069568[0;39m 已登录：{"id":1,"loginName":"test","name":"测试用户","token":"162926393678761984"}
+2022-03-26 22:11:36.487 INFO  com.partick.common.aspect.LogAspect               :52   [32m162926465854345216[0;39m ---------LogAspect 开始-------------
+2022-03-26 22:11:36.487 INFO  com.partick.common.aspect.LogAspect               :53   [32m162926465854345216[0;39m 请求地址：http://192.168.43.209:9404/user/listGET
+2022-03-26 22:11:36.488 INFO  com.partick.common.aspect.LogAspect               :54   [32m162926465854345216[0;39m 类名方法：com.partick.user.controller.UserControllerlist
+2022-03-26 22:11:36.488 INFO  com.partick.common.aspect.LogAspect               :55   [32m162926465854345216[0;39m 远程地址：192.168.43.209
+2022-03-26 22:11:36.488 INFO  com.partick.common.aspect.LogAspect               :75   [32m162926465854345216[0;39m 请求参数：[[{"page":0,"size":0}]]
+2022-03-26 22:11:36.584 INFO  com.partick.common.aspect.LogAspect               :87   [32m162926465854345216[0;39m 返回结果：{"content":{"list":[{"id":1,"loginName":"test","name":"测试用户"},{"id":102669832469745664,"loginName":"test1","name":"test1"},{"id":162920025584439296,"loginName":"Springcloud改造测试用户","name":"test2"}],"total":3},"message":"","success":true}
+2022-03-26 22:11:36.584 INFO  com.partick.common.aspect.LogAspect               :88   [32m162926465854345216[0;39m ------------ 结束 耗时：97ms------------------
+2022-03-26 22:11:36.585 INFO  com.partick.common.interceptor.LoginInterceptor   :64   [32m162926465854345216[0;39m ------------- LoginInterceptor 结束 耗时：155 ms -------------
+2022-03-26 22:23:35.386 INFO  com.partick.common.interceptor.LoginInterceptor   :29   [32m162922535695028224[0;39m ------------- LoginInterceptor 开始 -------------
+2022-03-26 22:23:35.387 INFO  com.partick.common.interceptor.LoginInterceptor   :40   [32m162922535695028224[0;39m 接口登录拦截：，path：http://192.168.43.209:9404/user/logout/162926393678761984
+2022-03-26 22:23:35.387 INFO  com.partick.common.interceptor.LoginInterceptor   :44   [32m162922535695028224[0;39m 登录校验开始，token：162926393678761984
+2022-03-26 22:23:35.458 INFO  com.partick.common.interceptor.LoginInterceptor   :56   [32m162922535695028224[0;39m 已登录：{"id":1,"loginName":"test","name":"测试用户","token":"162926393678761984"}
+2022-03-26 22:23:35.458 INFO  com.partick.common.aspect.LogAspect               :52   [32m162929481437286400[0;39m ---------LogAspect 开始-------------
+2022-03-26 22:23:35.458 INFO  com.partick.common.aspect.LogAspect               :53   [32m162929481437286400[0;39m 请求地址：http://192.168.43.209:9404/user/logout/162926393678761984GET
+2022-03-26 22:23:35.458 INFO  com.partick.common.aspect.LogAspect               :54   [32m162929481437286400[0;39m 类名方法：com.partick.user.controller.UserControllerlogout
+2022-03-26 22:23:35.459 INFO  com.partick.common.aspect.LogAspect               :55   [32m162929481437286400[0;39m 远程地址：192.168.43.209
+2022-03-26 22:23:35.459 INFO  com.partick.common.aspect.LogAspect               :75   [32m162929481437286400[0;39m 请求参数：[["162926393678761984"]]
+2022-03-26 22:23:35.459 INFO  com.partick.user.service.impl.UserServiceImpl     :138  [32m162929481437286400[0;39m 从redis中删除token：162926393678761984
+2022-03-26 22:23:35.517 INFO  com.partick.common.aspect.LogAspect               :87   [32m162929481437286400[0;39m 返回结果：{"message":"","success":true}
+2022-03-26 22:23:35.517 INFO  com.partick.common.aspect.LogAspect               :88   [32m162929481437286400[0;39m ------------ 结束 耗时：59ms------------------
+2022-03-26 22:23:35.518 INFO  com.partick.common.interceptor.LoginInterceptor   :64   [32m162929481437286400[0;39m ------------- LoginInterceptor 结束 耗时：131 ms -------------
+2022-03-26 22:24:47.622 INFO  com.partick.common.aspect.LogAspect               :52   [32m162929784115040256[0;39m ---------LogAspect 开始-------------
+2022-03-26 22:24:47.622 INFO  com.partick.common.aspect.LogAspect               :53   [32m162929784115040256[0;39m 请求地址：http://192.168.43.209:9404/user/loginPOST
+2022-03-26 22:24:47.622 INFO  com.partick.common.aspect.LogAspect               :54   [32m162929784115040256[0;39m 类名方法：com.partick.user.controller.UserControllerlogin
+2022-03-26 22:24:47.622 INFO  com.partick.common.aspect.LogAspect               :55   [32m162929784115040256[0;39m 远程地址：192.168.43.209
+2022-03-26 22:24:47.622 INFO  com.partick.common.aspect.LogAspect               :75   [32m162929784115040256[0;39m 请求参数：[[{"loginName":"test"}]]
+2022-03-26 22:24:47.697 INFO  com.partick.user.service.impl.UserServiceImpl     :124  [32m162929784115040256[0;39m 生成token并放入redis中
+2022-03-26 22:24:47.755 INFO  com.partick.common.aspect.LogAspect               :87   [32m162929784115040256[0;39m 返回结果：{"content":{"id":1,"loginName":"test","name":"测试用户","token":"162929784429613056"},"message":"","success":true}
+2022-03-26 22:24:47.756 INFO  com.partick.common.aspect.LogAspect               :88   [32m162929784115040256[0;39m ------------ 结束 耗时：134ms------------------
+2022-03-26 22:26:30.950 INFO  com.partick.common.interceptor.LoginInterceptor   :29   [32m162924910308626432[0;39m ------------- LoginInterceptor 开始 -------------
+2022-03-26 22:26:30.950 INFO  com.partick.common.interceptor.LoginInterceptor   :40   [32m162924910308626432[0;39m 接口登录拦截：，path：http://192.168.43.209:9404/user/logout/162929784429613056
+2022-03-26 22:26:30.950 INFO  com.partick.common.interceptor.LoginInterceptor   :44   [32m162924910308626432[0;39m 登录校验开始，token：162929784429613056
+2022-03-26 22:26:31.003 INFO  com.partick.common.interceptor.LoginInterceptor   :56   [32m162924910308626432[0;39m 已登录：{"id":1,"loginName":"test","name":"测试用户","token":"162929784429613056"}
+2022-03-26 22:26:31.004 INFO  com.partick.common.aspect.LogAspect               :52   [32m162930217730576384[0;39m ---------LogAspect 开始-------------
+2022-03-26 22:26:31.004 INFO  com.partick.common.aspect.LogAspect               :53   [32m162930217730576384[0;39m 请求地址：http://192.168.43.209:9404/user/logout/162929784429613056GET
+2022-03-26 22:26:31.004 INFO  com.partick.common.aspect.LogAspect               :54   [32m162930217730576384[0;39m 类名方法：com.partick.user.controller.UserControllerlogout
+2022-03-26 22:26:31.004 INFO  com.partick.common.aspect.LogAspect               :55   [32m162930217730576384[0;39m 远程地址：192.168.43.209
+2022-03-26 22:26:31.004 INFO  com.partick.common.aspect.LogAspect               :75   [32m162930217730576384[0;39m 请求参数：[["162929784429613056"]]
+2022-03-26 22:26:31.004 INFO  com.partick.user.service.impl.UserServiceImpl     :138  [32m162930217730576384[0;39m 从redis中删除token：162929784429613056
+2022-03-26 22:26:31.058 INFO  com.partick.common.aspect.LogAspect               :87   [32m162930217730576384[0;39m 返回结果：{"message":"","success":true}
+2022-03-26 22:26:31.059 INFO  com.partick.common.aspect.LogAspect               :88   [32m162930217730576384[0;39m ------------ 结束 耗时：55ms------------------
+2022-03-26 22:26:31.060 INFO  com.partick.common.interceptor.LoginInterceptor   :64   [32m162930217730576384[0;39m ------------- LoginInterceptor 结束 耗时：110 ms -------------
+2022-03-26 22:27:25.368 INFO  com.partick.common.aspect.LogAspect               :52   [32m162930445749719040[0;39m ---------LogAspect 开始-------------
+2022-03-26 22:27:25.369 INFO  com.partick.common.aspect.LogAspect               :53   [32m162930445749719040[0;39m 请求地址：http://192.168.43.209:9404/user/loginPOST
+2022-03-26 22:27:25.369 INFO  com.partick.common.aspect.LogAspect               :54   [32m162930445749719040[0;39m 类名方法：com.partick.user.controller.UserControllerlogin
+2022-03-26 22:27:25.369 INFO  com.partick.common.aspect.LogAspect               :55   [32m162930445749719040[0;39m 远程地址：192.168.43.209
+2022-03-26 22:27:25.369 INFO  com.partick.common.aspect.LogAspect               :75   [32m162930445749719040[0;39m 请求参数：[[{"loginName":"test"}]]
+2022-03-26 22:27:25.452 INFO  com.partick.user.service.impl.UserServiceImpl     :124  [32m162930445749719040[0;39m 生成token并放入redis中
+2022-03-26 22:27:25.515 INFO  com.partick.common.aspect.LogAspect               :87   [32m162930445749719040[0;39m 返回结果：{"content":{"id":1,"loginName":"test","name":"测试用户","token":"162930446102040576"},"message":"","success":true}
+2022-03-26 22:27:25.516 INFO  com.partick.common.aspect.LogAspect               :88   [32m162930445749719040[0;39m ------------ 结束 耗时：148ms------------------
+2022-03-26 22:59:45.598 INFO  com.partick.common.interceptor.LoginInterceptor   :29   [32m162926393267720192[0;39m ------------- LoginInterceptor 开始 -------------
+2022-03-26 22:59:45.598 INFO  com.partick.common.interceptor.LoginInterceptor   :40   [32m162926393267720192[0;39m 接口登录拦截：，path：http://192.168.43.209:9404/user/logout/162930446102040576
+2022-03-26 22:59:45.598 INFO  com.partick.common.interceptor.LoginInterceptor   :44   [32m162926393267720192[0;39m 登录校验开始，token：162930446102040576
+2022-03-26 22:59:45.654 INFO  com.partick.common.interceptor.LoginInterceptor   :56   [32m162926393267720192[0;39m 已登录：{"id":1,"loginName":"test","name":"测试用户","token":"162930446102040576"}
+2022-03-26 22:59:45.655 INFO  com.partick.common.aspect.LogAspect               :52   [32m162938583903244288[0;39m ---------LogAspect 开始-------------
+2022-03-26 22:59:45.656 INFO  com.partick.common.aspect.LogAspect               :53   [32m162938583903244288[0;39m 请求地址：http://192.168.43.209:9404/user/logout/162930446102040576GET
+2022-03-26 22:59:45.656 INFO  com.partick.common.aspect.LogAspect               :54   [32m162938583903244288[0;39m 类名方法：com.partick.user.controller.UserControllerlogout
+2022-03-26 22:59:45.656 INFO  com.partick.common.aspect.LogAspect               :55   [32m162938583903244288[0;39m 远程地址：192.168.43.209
+2022-03-26 22:59:45.656 INFO  com.partick.common.aspect.LogAspect               :75   [32m162938583903244288[0;39m 请求参数：[["162930446102040576"]]
+2022-03-26 22:59:45.656 INFO  com.partick.user.service.impl.UserServiceImpl     :138  [32m162938583903244288[0;39m 从redis中删除token：162930446102040576
+2022-03-26 22:59:45.708 INFO  com.partick.common.aspect.LogAspect               :87   [32m162938583903244288[0;39m 返回结果：{"message":"","success":true}
+2022-03-26 22:59:45.708 INFO  com.partick.common.aspect.LogAspect               :88   [32m162938583903244288[0;39m ------------ 结束 耗时：53ms------------------
+2022-03-26 22:59:45.710 INFO  com.partick.common.interceptor.LoginInterceptor   :64   [32m162938583903244288[0;39m ------------- LoginInterceptor 结束 耗时：112 ms -------------
+2022-03-26 23:00:28.379 INFO  com.partick.common.aspect.LogAspect               :52   [32m162938763100688384[0;39m ---------LogAspect 开始-------------
+2022-03-26 23:00:28.380 INFO  com.partick.common.aspect.LogAspect               :53   [32m162938763100688384[0;39m 请求地址：http://192.168.43.209:9404/user/loginPOST
+2022-03-26 23:00:28.380 INFO  com.partick.common.aspect.LogAspect               :54   [32m162938763100688384[0;39m 类名方法：com.partick.user.controller.UserControllerlogin
+2022-03-26 23:00:28.380 INFO  com.partick.common.aspect.LogAspect               :55   [32m162938763100688384[0;39m 远程地址：192.168.43.209
+2022-03-26 23:00:28.380 INFO  com.partick.common.aspect.LogAspect               :75   [32m162938763100688384[0;39m 请求参数：[[{"loginName":"test"}]]
+2022-03-26 23:00:28.453 INFO  com.partick.user.service.impl.UserServiceImpl     :124  [32m162938763100688384[0;39m 生成token并放入redis中
+2022-03-26 23:00:28.516 INFO  com.partick.common.aspect.LogAspect               :87   [32m162938763100688384[0;39m 返回结果：{"content":{"id":1,"loginName":"test","name":"测试用户","token":"162938763411066880"},"message":"","success":true}
+2022-03-26 23:00:28.517 INFO  com.partick.common.aspect.LogAspect               :88   [32m162938763100688384[0;39m ------------ 结束 耗时：138ms------------------
+2022-03-26 23:19:57.240 INFO  com.partick.common.interceptor.LoginInterceptor   :29   [32m162929481437286400[0;39m ------------- LoginInterceptor 开始 -------------
+2022-03-26 23:19:57.240 INFO  com.partick.common.interceptor.LoginInterceptor   :40   [32m162929481437286400[0;39m 接口登录拦截：，path：http://192.168.43.209:9404/user/logout/162938763411066880
+2022-03-26 23:19:57.240 INFO  com.partick.common.interceptor.LoginInterceptor   :44   [32m162929481437286400[0;39m 登录校验开始，token：162938763411066880
+2022-03-26 23:19:57.296 INFO  com.partick.common.interceptor.LoginInterceptor   :56   [32m162929481437286400[0;39m 已登录：{"id":1,"loginName":"test","name":"测试用户","token":"162938763411066880"}
+2022-03-26 23:19:57.297 INFO  com.partick.common.aspect.LogAspect               :52   [32m162943665898131456[0;39m ---------LogAspect 开始-------------
+2022-03-26 23:19:57.297 INFO  com.partick.common.aspect.LogAspect               :53   [32m162943665898131456[0;39m 请求地址：http://192.168.43.209:9404/user/logout/162938763411066880GET
+2022-03-26 23:19:57.297 INFO  com.partick.common.aspect.LogAspect               :54   [32m162943665898131456[0;39m 类名方法：com.partick.user.controller.UserControllerlogout
+2022-03-26 23:19:57.298 INFO  com.partick.common.aspect.LogAspect               :55   [32m162943665898131456[0;39m 远程地址：192.168.43.209
+2022-03-26 23:19:57.298 INFO  com.partick.common.aspect.LogAspect               :75   [32m162943665898131456[0;39m 请求参数：[["162938763411066880"]]
+2022-03-26 23:19:57.298 INFO  com.partick.user.service.impl.UserServiceImpl     :138  [32m162943665898131456[0;39m 从redis中删除token：162938763411066880
+2022-03-26 23:19:57.369 INFO  com.partick.common.aspect.LogAspect               :87   [32m162943665898131456[0;39m 返回结果：{"message":"","success":true}
+2022-03-26 23:19:57.370 INFO  com.partick.common.aspect.LogAspect               :88   [32m162943665898131456[0;39m ------------ 结束 耗时：73ms------------------
+2022-03-26 23:19:57.371 INFO  com.partick.common.interceptor.LoginInterceptor   :64   [32m162943665898131456[0;39m ------------- LoginInterceptor 结束 耗时：131 ms -------------
+2022-03-26 23:19:59.513 INFO  com.partick.common.aspect.LogAspect               :52   [32m162943675192709120[0;39m ---------LogAspect 开始-------------
+2022-03-26 23:19:59.514 INFO  com.partick.common.aspect.LogAspect               :53   [32m162943675192709120[0;39m 请求地址：http://192.168.43.209:9404/user/loginPOST
+2022-03-26 23:19:59.514 INFO  com.partick.common.aspect.LogAspect               :54   [32m162943675192709120[0;39m 类名方法：com.partick.user.controller.UserControllerlogin
+2022-03-26 23:19:59.514 INFO  com.partick.common.aspect.LogAspect               :55   [32m162943675192709120[0;39m 远程地址：192.168.43.209
+2022-03-26 23:19:59.514 INFO  com.partick.common.aspect.LogAspect               :75   [32m162943675192709120[0;39m 请求参数：[[{"loginName":"test"}]]
+2022-03-26 23:19:59.584 INFO  com.partick.user.service.impl.UserServiceImpl     :124  [32m162943675192709120[0;39m 生成token并放入redis中
+2022-03-26 23:19:59.647 INFO  com.partick.common.aspect.LogAspect               :87   [32m162943675192709120[0;39m 返回结果：{"content":{"id":1,"loginName":"test","name":"测试用户","token":"162943675490504704"},"message":"","success":true}
+2022-03-26 23:19:59.648 INFO  com.partick.common.aspect.LogAspect               :88   [32m162943675192709120[0;39m ------------ 结束 耗时：135ms------------------
+2022-03-26 23:20:00.599 INFO  com.partick.common.interceptor.LoginInterceptor   :29   [32m162929784115040256[0;39m ------------- LoginInterceptor 开始 -------------
+2022-03-26 23:20:00.600 INFO  com.partick.common.interceptor.LoginInterceptor   :40   [32m162929784115040256[0;39m 接口登录拦截：，path：http://192.168.43.209:9404/user/list
+2022-03-26 23:20:00.600 INFO  com.partick.common.interceptor.LoginInterceptor   :44   [32m162929784115040256[0;39m 登录校验开始，token：162943675490504704
+2022-03-26 23:20:00.671 INFO  com.partick.common.interceptor.LoginInterceptor   :56   [32m162929784115040256[0;39m 已登录：{"id":1,"loginName":"test","name":"测试用户","token":"162943675490504704"}
+2022-03-26 23:20:00.673 INFO  com.partick.common.aspect.LogAspect               :52   [32m162943680058101760[0;39m ---------LogAspect 开始-------------
+2022-03-26 23:20:00.674 INFO  com.partick.common.aspect.LogAspect               :53   [32m162943680058101760[0;39m 请求地址：http://192.168.43.209:9404/user/listGET
+2022-03-26 23:20:00.674 INFO  com.partick.common.aspect.LogAspect               :54   [32m162943680058101760[0;39m 类名方法：com.partick.user.controller.UserControllerlist
+2022-03-26 23:20:00.674 INFO  com.partick.common.aspect.LogAspect               :55   [32m162943680058101760[0;39m 远程地址：192.168.43.209
+2022-03-26 23:20:00.674 INFO  com.partick.common.aspect.LogAspect               :75   [32m162943680058101760[0;39m 请求参数：[[{"page":0,"size":0}]]
+2022-03-26 23:20:00.764 INFO  com.partick.common.aspect.LogAspect               :87   [32m162943680058101760[0;39m 返回结果：{"content":{"list":[{"id":1,"loginName":"test","name":"测试用户"},{"id":102669832469745664,"loginName":"test1","name":"test1"},{"id":162920025584439296,"loginName":"Springcloud改造测试用户","name":"test2"}],"total":3},"message":"","success":true}
+2022-03-26 23:20:00.765 INFO  com.partick.common.aspect.LogAspect               :88   [32m162943680058101760[0;39m ------------ 结束 耗时：92ms------------------
+2022-03-26 23:20:00.766 INFO  com.partick.common.interceptor.LoginInterceptor   :64   [32m162943680058101760[0;39m ------------- LoginInterceptor 结束 耗时：166 ms -------------
+2022-03-26 23:27:48.286 INFO  com.partick.common.interceptor.LoginInterceptor   :29   [32m162930217730576384[0;39m ------------- LoginInterceptor 开始 -------------
+2022-03-26 23:27:48.286 INFO  com.partick.common.interceptor.LoginInterceptor   :40   [32m162930217730576384[0;39m 接口登录拦截：，path：http://192.168.43.209:9404/user/list
+2022-03-26 23:27:48.286 INFO  com.partick.common.interceptor.LoginInterceptor   :44   [32m162930217730576384[0;39m 登录校验开始，token：162943675490504704
+2022-03-26 23:27:48.337 INFO  com.partick.common.interceptor.LoginInterceptor   :56   [32m162930217730576384[0;39m 已登录：{"id":1,"loginName":"test","name":"测试用户","token":"162943675490504704"}
+2022-03-26 23:27:48.338 INFO  com.partick.common.aspect.LogAspect               :52   [32m162945641587281920[0;39m ---------LogAspect 开始-------------
+2022-03-26 23:27:48.338 INFO  com.partick.common.aspect.LogAspect               :53   [32m162945641587281920[0;39m 请求地址：http://192.168.43.209:9404/user/listGET
+2022-03-26 23:27:48.338 INFO  com.partick.common.aspect.LogAspect               :54   [32m162945641587281920[0;39m 类名方法：com.partick.user.controller.UserControllerlist
+2022-03-26 23:27:48.338 INFO  com.partick.common.aspect.LogAspect               :55   [32m162945641587281920[0;39m 远程地址：192.168.43.209
+2022-03-26 23:27:48.338 INFO  com.partick.common.aspect.LogAspect               :75   [32m162945641587281920[0;39m 请求参数：[[{"page":0,"size":0}]]
+2022-03-26 23:27:48.438 INFO  com.partick.common.aspect.LogAspect               :87   [32m162945641587281920[0;39m 返回结果：{"content":{"list":[{"id":1,"loginName":"test","name":"测试用户"},{"id":102669832469745664,"loginName":"test1","name":"test1"},{"id":162920025584439296,"loginName":"Springcloud改造测试用户","name":"test2"}],"total":3},"message":"","success":true}
+2022-03-26 23:27:48.438 INFO  com.partick.common.aspect.LogAspect               :88   [32m162945641587281920[0;39m ------------ 结束 耗时：100ms------------------
+2022-03-26 23:27:48.440 INFO  com.partick.common.interceptor.LoginInterceptor   :64   [32m162945641587281920[0;39m ------------- LoginInterceptor 结束 耗时：154 ms -------------
+2022-03-26 23:27:59.833 INFO  com.partick.common.interceptor.LoginInterceptor   :29   [32m162930445749719040[0;39m ------------- LoginInterceptor 开始 -------------
+2022-03-26 23:27:59.834 INFO  com.partick.common.interceptor.LoginInterceptor   :40   [32m162930445749719040[0;39m 接口登录拦截：，path：http://192.168.43.209:9404/user/list
+2022-03-26 23:27:59.834 INFO  com.partick.common.interceptor.LoginInterceptor   :44   [32m162930445749719040[0;39m 登录校验开始，token：162943675490504704
+2022-03-26 23:27:59.908 INFO  com.partick.common.interceptor.LoginInterceptor   :56   [32m162930445749719040[0;39m 已登录：{"id":1,"loginName":"test","name":"测试用户","token":"162943675490504704"}
+2022-03-26 23:27:59.909 INFO  com.partick.common.aspect.LogAspect               :52   [32m162945690119573504[0;39m ---------LogAspect 开始-------------
+2022-03-26 23:27:59.909 INFO  com.partick.common.aspect.LogAspect               :53   [32m162945690119573504[0;39m 请求地址：http://192.168.43.209:9404/user/listGET
+2022-03-26 23:27:59.909 INFO  com.partick.common.aspect.LogAspect               :54   [32m162945690119573504[0;39m 类名方法：com.partick.user.controller.UserControllerlist
+2022-03-26 23:27:59.909 INFO  com.partick.common.aspect.LogAspect               :55   [32m162945690119573504[0;39m 远程地址：192.168.43.209
+2022-03-26 23:27:59.909 INFO  com.partick.common.aspect.LogAspect               :75   [32m162945690119573504[0;39m 请求参数：[[{"page":0,"size":0}]]
+2022-03-26 23:28:00.003 INFO  com.partick.common.aspect.LogAspect               :87   [32m162945690119573504[0;39m 返回结果：{"content":{"list":[{"id":1,"loginName":"test","name":"测试用户"},{"id":102669832469745664,"loginName":"test1","name":"test1"},{"id":162920025584439296,"loginName":"Springcloud改造测试用户","name":"test2"}],"total":3},"message":"","success":true}
+2022-03-26 23:28:00.003 INFO  com.partick.common.aspect.LogAspect               :88   [32m162945690119573504[0;39m ------------ 结束 耗时：94ms------------------
+2022-03-26 23:28:00.004 INFO  com.partick.common.interceptor.LoginInterceptor   :64   [32m162945690119573504[0;39m ------------- LoginInterceptor 结束 耗时：170 ms -------------
+2022-03-26 23:28:08.276 INFO  com.partick.common.interceptor.LoginInterceptor   :29   [32m162926386330341376[0;39m ------------- LoginInterceptor 开始 -------------
+2022-03-26 23:28:08.276 INFO  com.partick.common.interceptor.LoginInterceptor   :40   [32m162926386330341376[0;39m 接口登录拦截：，path：http://192.168.43.209:9404/user/list
+2022-03-26 23:28:08.277 INFO  com.partick.common.interceptor.LoginInterceptor   :44   [32m162926386330341376[0;39m 登录校验开始，token：162943675490504704
+2022-03-26 23:28:08.382 INFO  com.partick.common.interceptor.LoginInterceptor   :56   [32m162926386330341376[0;39m 已登录：{"id":1,"loginName":"test","name":"测试用户","token":"162943675490504704"}
+2022-03-26 23:28:08.383 INFO  com.partick.common.aspect.LogAspect               :52   [32m162945725662105600[0;39m ---------LogAspect 开始-------------
+2022-03-26 23:28:08.383 INFO  com.partick.common.aspect.LogAspect               :53   [32m162945725662105600[0;39m 请求地址：http://192.168.43.209:9404/user/listGET
+2022-03-26 23:28:08.383 INFO  com.partick.common.aspect.LogAspect               :54   [32m162945725662105600[0;39m 类名方法：com.partick.user.controller.UserControllerlist
+2022-03-26 23:28:08.383 INFO  com.partick.common.aspect.LogAspect               :55   [32m162945725662105600[0;39m 远程地址：192.168.43.209
+2022-03-26 23:28:08.383 INFO  com.partick.common.aspect.LogAspect               :75   [32m162945725662105600[0;39m 请求参数：[[{"page":0,"size":0}]]
+2022-03-26 23:28:08.583 INFO  com.partick.common.aspect.LogAspect               :87   [32m162945725662105600[0;39m 返回结果：{"content":{"list":[{"id":1,"loginName":"test","name":"测试用户"},{"id":102669832469745664,"loginName":"test1","name":"test1"},{"id":162920025584439296,"loginName":"Springcloud改造测试用户","name":"test2"}],"total":3},"message":"","success":true}
+2022-03-26 23:28:08.583 INFO  com.partick.common.aspect.LogAspect               :88   [32m162945725662105600[0;39m ------------ 结束 耗时：200ms------------------
+2022-03-26 23:28:08.584 INFO  com.partick.common.interceptor.LoginInterceptor   :64   [32m162945725662105600[0;39m ------------- LoginInterceptor 结束 耗时：308 ms -------------
+2022-03-26 23:30:24.311 INFO  com.partick.common.interceptor.LoginInterceptor   :29   [32m162938763100688384[0;39m ------------- LoginInterceptor 开始 -------------
+2022-03-26 23:30:24.311 INFO  com.partick.common.interceptor.LoginInterceptor   :40   [32m162938763100688384[0;39m 接口登录拦截：，path：http://192.168.43.209:9404/user/logout/162943675490504704
+2022-03-26 23:30:24.311 INFO  com.partick.common.interceptor.LoginInterceptor   :44   [32m162938763100688384[0;39m 登录校验开始，token：162943675490504704
+2022-03-26 23:30:24.367 INFO  com.partick.common.interceptor.LoginInterceptor   :56   [32m162938763100688384[0;39m 已登录：{"id":1,"loginName":"test","name":"测试用户","token":"162943675490504704"}
+2022-03-26 23:30:24.368 INFO  com.partick.common.aspect.LogAspect               :52   [32m162946296024535040[0;39m ---------LogAspect 开始-------------
+2022-03-26 23:30:24.368 INFO  com.partick.common.aspect.LogAspect               :53   [32m162946296024535040[0;39m 请求地址：http://192.168.43.209:9404/user/logout/162943675490504704GET
+2022-03-26 23:30:24.368 INFO  com.partick.common.aspect.LogAspect               :54   [32m162946296024535040[0;39m 类名方法：com.partick.user.controller.UserControllerlogout
+2022-03-26 23:30:24.368 INFO  com.partick.common.aspect.LogAspect               :55   [32m162946296024535040[0;39m 远程地址：192.168.43.209
+2022-03-26 23:30:24.368 INFO  com.partick.common.aspect.LogAspect               :75   [32m162946296024535040[0;39m 请求参数：[["162943675490504704"]]
+2022-03-26 23:30:24.369 INFO  com.partick.user.service.impl.UserServiceImpl     :138  [32m162946296024535040[0;39m 从redis中删除token：162943675490504704
+2022-03-26 23:30:24.422 INFO  com.partick.common.aspect.LogAspect               :87   [32m162946296024535040[0;39m 返回结果：{"message":"","success":true}
+2022-03-26 23:30:24.422 INFO  com.partick.common.aspect.LogAspect               :88   [32m162946296024535040[0;39m ------------ 结束 耗时：54ms------------------
+2022-03-26 23:30:24.424 INFO  com.partick.common.interceptor.LoginInterceptor   :64   [32m162946296024535040[0;39m ------------- LoginInterceptor 结束 耗时：113 ms -------------
+2022-03-26 23:30:30.467 INFO  com.partick.common.aspect.LogAspect               :52   [32m162946321605595136[0;39m ---------LogAspect 开始-------------
+2022-03-26 23:30:30.467 INFO  com.partick.common.aspect.LogAspect               :53   [32m162946321605595136[0;39m 请求地址：http://192.168.43.209:9404/user/loginPOST
+2022-03-26 23:30:30.467 INFO  com.partick.common.aspect.LogAspect               :54   [32m162946321605595136[0;39m 类名方法：com.partick.user.controller.UserControllerlogin
+2022-03-26 23:30:30.467 INFO  com.partick.common.aspect.LogAspect               :55   [32m162946321605595136[0;39m 远程地址：192.168.43.209
+2022-03-26 23:30:30.468 INFO  com.partick.common.aspect.LogAspect               :75   [32m162946321605595136[0;39m 请求参数：[[{"loginName":"test"}]]
+2022-03-26 23:30:30.541 INFO  com.partick.user.service.impl.UserServiceImpl     :124  [32m162946321605595136[0;39m 生成token并放入redis中
+2022-03-26 23:30:30.603 INFO  com.partick.common.aspect.LogAspect               :87   [32m162946321605595136[0;39m 返回结果：{"content":{"id":1,"loginName":"test","name":"测试用户","token":"162946321915973632"},"message":"","success":true}
+2022-03-26 23:30:30.604 INFO  com.partick.common.aspect.LogAspect               :88   [32m162946321605595136[0;39m ------------ 结束 耗时：137ms------------------
+2022-03-26 23:42:45.223 INFO  com.partick.common.interceptor.LoginInterceptor   :29   [32m162943675192709120[0;39m ------------- LoginInterceptor 开始 -------------
+2022-03-26 23:42:45.223 INFO  com.partick.common.interceptor.LoginInterceptor   :40   [32m162943675192709120[0;39m 接口登录拦截：，path：http://192.168.43.209:9404/user/logout/162946321915973632
+2022-03-26 23:42:45.223 INFO  com.partick.common.interceptor.LoginInterceptor   :44   [32m162943675192709120[0;39m 登录校验开始，token：162946321915973632
+2022-03-26 23:42:45.295 INFO  com.partick.common.interceptor.LoginInterceptor   :56   [32m162943675192709120[0;39m 已登录：{"id":1,"loginName":"test","name":"测试用户","token":"162946321915973632"}
+2022-03-26 23:42:45.296 INFO  com.partick.common.aspect.LogAspect               :52   [32m162949403701809152[0;39m ---------LogAspect 开始-------------
+2022-03-26 23:42:45.296 INFO  com.partick.common.aspect.LogAspect               :53   [32m162949403701809152[0;39m 请求地址：http://192.168.43.209:9404/user/logout/162946321915973632GET
+2022-03-26 23:42:45.296 INFO  com.partick.common.aspect.LogAspect               :54   [32m162949403701809152[0;39m 类名方法：com.partick.user.controller.UserControllerlogout
+2022-03-26 23:42:45.296 INFO  com.partick.common.aspect.LogAspect               :55   [32m162949403701809152[0;39m 远程地址：192.168.43.209
+2022-03-26 23:42:45.296 INFO  com.partick.common.aspect.LogAspect               :75   [32m162949403701809152[0;39m 请求参数：[["162946321915973632"]]
+2022-03-26 23:42:45.297 INFO  com.partick.user.service.impl.UserServiceImpl     :138  [32m162949403701809152[0;39m 从redis中删除token：162946321915973632
+2022-03-26 23:42:45.367 INFO  com.partick.common.aspect.LogAspect               :87   [32m162949403701809152[0;39m 返回结果：{"message":"","success":true}
+2022-03-26 23:42:45.367 INFO  com.partick.common.aspect.LogAspect               :88   [32m162949403701809152[0;39m ------------ 结束 耗时：71ms------------------
+2022-03-26 23:42:45.369 INFO  com.partick.common.interceptor.LoginInterceptor   :64   [32m162949403701809152[0;39m ------------- LoginInterceptor 结束 耗时：146 ms -------------
+2022-03-26 23:42:57.262 INFO  com.partick.common.aspect.LogAspect               :52   [32m162949453890850816[0;39m ---------LogAspect 开始-------------
+2022-03-26 23:42:57.262 INFO  com.partick.common.aspect.LogAspect               :53   [32m162949453890850816[0;39m 请求地址：http://192.168.43.209:9404/user/loginPOST
+2022-03-26 23:42:57.262 INFO  com.partick.common.aspect.LogAspect               :54   [32m162949453890850816[0;39m 类名方法：com.partick.user.controller.UserControllerlogin
+2022-03-26 23:42:57.262 INFO  com.partick.common.aspect.LogAspect               :55   [32m162949453890850816[0;39m 远程地址：192.168.43.209
+2022-03-26 23:42:57.262 INFO  com.partick.common.aspect.LogAspect               :75   [32m162949453890850816[0;39m 请求参数：[[{"loginName":"test"}]]
+2022-03-26 23:42:57.318 INFO  com.partick.user.service.impl.UserServiceImpl     :124  [32m162949453890850816[0;39m 生成token并放入redis中
+2022-03-26 23:42:57.370 INFO  com.partick.common.aspect.LogAspect               :87   [32m162949453890850816[0;39m 返回结果：{"content":{"id":1,"loginName":"test","name":"测试用户","token":"162949454125731840"},"message":"","success":true}
+2022-03-26 23:42:57.370 INFO  com.partick.common.aspect.LogAspect               :88   [32m162949453890850816[0;39m ------------ 结束 耗时：108ms------------------
+2022-03-26 23:53:52.681 INFO  com.partick.common.interceptor.LoginInterceptor   :29   [32m162945641587281920[0;39m ------------- LoginInterceptor 开始 -------------
+2022-03-26 23:53:52.682 INFO  com.partick.common.interceptor.LoginInterceptor   :40   [32m162945641587281920[0;39m 接口登录拦截：，path：http://192.168.43.209:9404/user/logout/162949454125731840
+2022-03-26 23:53:52.682 INFO  com.partick.common.interceptor.LoginInterceptor   :44   [32m162945641587281920[0;39m 登录校验开始，token：162949454125731840
+2022-03-26 23:53:52.744 INFO  com.partick.common.interceptor.LoginInterceptor   :56   [32m162945641587281920[0;39m 已登录：{"id":1,"loginName":"test","name":"测试用户","token":"162949454125731840"}
+2022-03-26 23:53:52.745 INFO  com.partick.common.aspect.LogAspect               :52   [32m162952203185819648[0;39m ---------LogAspect 开始-------------
+2022-03-26 23:53:52.745 INFO  com.partick.common.aspect.LogAspect               :53   [32m162952203185819648[0;39m 请求地址：http://192.168.43.209:9404/user/logout/162949454125731840GET
+2022-03-26 23:53:52.745 INFO  com.partick.common.aspect.LogAspect               :54   [32m162952203185819648[0;39m 类名方法：com.partick.user.controller.UserControllerlogout
+2022-03-26 23:53:52.745 INFO  com.partick.common.aspect.LogAspect               :55   [32m162952203185819648[0;39m 远程地址：192.168.43.209
+2022-03-26 23:53:52.745 INFO  com.partick.common.aspect.LogAspect               :75   [32m162952203185819648[0;39m 请求参数：[["162949454125731840"]]
+2022-03-26 23:53:52.746 INFO  com.partick.user.service.impl.UserServiceImpl     :138  [32m162952203185819648[0;39m 从redis中删除token：162949454125731840
+2022-03-26 23:53:52.797 INFO  com.partick.common.aspect.LogAspect               :87   [32m162952203185819648[0;39m 返回结果：{"message":"","success":true}
+2022-03-26 23:53:52.797 INFO  com.partick.common.aspect.LogAspect               :88   [32m162952203185819648[0;39m ------------ 结束 耗时：53ms------------------
+2022-03-26 23:53:52.798 INFO  com.partick.common.interceptor.LoginInterceptor   :64   [32m162952203185819648[0;39m ------------- LoginInterceptor 结束 耗时：116 ms -------------
+2022-03-26 23:53:54.180 INFO  com.partick.common.aspect.LogAspect               :52   [32m162952209204645888[0;39m ---------LogAspect 开始-------------
+2022-03-26 23:53:54.180 INFO  com.partick.common.aspect.LogAspect               :53   [32m162952209204645888[0;39m 请求地址：http://192.168.43.209:9404/user/loginPOST
+2022-03-26 23:53:54.180 INFO  com.partick.common.aspect.LogAspect               :54   [32m162952209204645888[0;39m 类名方法：com.partick.user.controller.UserControllerlogin
+2022-03-26 23:53:54.181 INFO  com.partick.common.aspect.LogAspect               :55   [32m162952209204645888[0;39m 远程地址：192.168.43.209
+2022-03-26 23:53:54.181 INFO  com.partick.common.aspect.LogAspect               :75   [32m162952209204645888[0;39m 请求参数：[[{"loginName":"test"}]]
+2022-03-26 23:53:54.243 INFO  com.partick.user.service.impl.UserServiceImpl     :124  [32m162952209204645888[0;39m 生成token并放入redis中
+2022-03-26 23:53:54.297 INFO  com.partick.common.aspect.LogAspect               :87   [32m162952209204645888[0;39m 返回结果：{"content":{"id":1,"loginName":"test","name":"测试用户","token":"162952209468887040"},"message":"","success":true}
+2022-03-26 23:53:54.298 INFO  com.partick.common.aspect.LogAspect               :88   [32m162952209204645888[0;39m ------------ 结束 耗时：118ms------------------
+2022-03-26 23:57:41.745 INFO  com.partick.common.interceptor.LoginInterceptor   :29   [32m162938583903244288[0;39m ------------- LoginInterceptor 开始 -------------
+2022-03-26 23:57:41.745 INFO  com.partick.common.interceptor.LoginInterceptor   :40   [32m162938583903244288[0;39m 接口登录拦截：，path：http://192.168.43.209:9404/user/logout/162952209468887040
+2022-03-26 23:57:41.745 INFO  com.partick.common.interceptor.LoginInterceptor   :44   [32m162938583903244288[0;39m 登录校验开始，token：162952209468887040
+2022-03-26 23:57:41.799 INFO  com.partick.common.interceptor.LoginInterceptor   :56   [32m162938583903244288[0;39m 已登录：{"id":1,"loginName":"test","name":"测试用户","token":"162952209468887040"}
+2022-03-26 23:57:41.800 INFO  com.partick.common.aspect.LogAspect               :52   [32m162953163912122368[0;39m ---------LogAspect 开始-------------
+2022-03-26 23:57:41.800 INFO  com.partick.common.aspect.LogAspect               :53   [32m162953163912122368[0;39m 请求地址：http://192.168.43.209:9404/user/logout/162952209468887040GET
+2022-03-26 23:57:41.800 INFO  com.partick.common.aspect.LogAspect               :54   [32m162953163912122368[0;39m 类名方法：com.partick.user.controller.UserControllerlogout
+2022-03-26 23:57:41.800 INFO  com.partick.common.aspect.LogAspect               :55   [32m162953163912122368[0;39m 远程地址：192.168.43.209
+2022-03-26 23:57:41.801 INFO  com.partick.common.aspect.LogAspect               :75   [32m162953163912122368[0;39m 请求参数：[["162952209468887040"]]
+2022-03-26 23:57:41.801 INFO  com.partick.user.service.impl.UserServiceImpl     :138  [32m162953163912122368[0;39m 从redis中删除token：162952209468887040
+2022-03-26 23:57:41.858 INFO  com.partick.common.aspect.LogAspect               :87   [32m162953163912122368[0;39m 返回结果：{"message":"","success":true}
+2022-03-26 23:57:41.858 INFO  com.partick.common.aspect.LogAspect               :88   [32m162953163912122368[0;39m ------------ 结束 耗时：58ms------------------
+2022-03-26 23:57:41.860 INFO  com.partick.common.interceptor.LoginInterceptor   :64   [32m162953163912122368[0;39m ------------- LoginInterceptor 结束 耗时：115 ms -------------
+2022-03-26 23:57:47.256 INFO  com.partick.common.aspect.LogAspect               :52   [32m162953186796244992[0;39m ---------LogAspect 开始-------------
+2022-03-26 23:57:47.256 INFO  com.partick.common.aspect.LogAspect               :53   [32m162953186796244992[0;39m 请求地址：http://192.168.43.209:9404/user/loginPOST
+2022-03-26 23:57:47.256 INFO  com.partick.common.aspect.LogAspect               :54   [32m162953186796244992[0;39m 类名方法：com.partick.user.controller.UserControllerlogin
+2022-03-26 23:57:47.256 INFO  com.partick.common.aspect.LogAspect               :55   [32m162953186796244992[0;39m 远程地址：192.168.43.209
+2022-03-26 23:57:47.257 INFO  com.partick.common.aspect.LogAspect               :75   [32m162953186796244992[0;39m 请求参数：[[{"loginName":"test"}]]
+2022-03-26 23:57:47.326 INFO  com.partick.user.service.impl.UserServiceImpl     :124  [32m162953186796244992[0;39m 生成token并放入redis中
+2022-03-26 23:57:47.386 INFO  com.partick.common.aspect.LogAspect               :87   [32m162953186796244992[0;39m 返回结果：{"content":{"id":1,"loginName":"test","name":"测试用户","token":"162953187089846272"},"message":"","success":true}
+2022-03-26 23:57:47.386 INFO  com.partick.common.aspect.LogAspect               :88   [32m162953186796244992[0;39m ------------ 结束 耗时：130ms------------------

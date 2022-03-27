@@ -1,0 +1,17 @@
+#与nacos配置中心通信的一系列设置
+spring:
+  application:
+    name: wiki-category
+  profiles:
+    active: dev
+  cloud:
+    nacos:
+      config:
+        file-extension: yml
+        server-addr:
+        username:
+        password:
+        shared-configs:
+          - data-id: common.yml #Nacos共享配置
+            group: DEFAULT_GROUP
+            refresh: true
